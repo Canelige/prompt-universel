@@ -1,0 +1,44 @@
+# Who reads it, and when: `diapo-fabricant`, who copies it to <subfolder>/travail/reglages.yaml and fills it in: it is the art direction of the work (phase 5), the only thing to write besides blocs.py. No content and no printed number here: they are in 02_contenu.yaml.
+# Any missing key takes the default of commun.py (DEFAUTS).
+document:
+  titre: ""                  # default: the title of page 1
+  auteur: "[to be completed]"
+  sujet: ""
+  nom_fichier: "Subject_Deliverable_Author"   # P6.18, no extension, no space, no accent
+  langue: en                 # <html lang> and tagged PDF (P6.15)
+couleurs:                    # roles table (DA.51); the derived roles are computed by script (DA.44 to DA.47)
+  teinte: "#3A4A5C"          # hue of the background and of the ink (tinted neutrals)
+  accent: "#E07A1F"
+  accent_2: "#3A4A5C"        # never more than 10 % of a page (DA.44)
+  series: {}                 # name of a category -> color, e.g. {Canada: "#C82E62", Japan: "#95C11F"}: headers, bars, first column (DA.52)
+  roles: {}                  # force a computed role, e.g. {accent-fonce: "#9A5A00"}
+polices:
+  famille: "sans-serif"      # family name, as in @font-face
+  fichiers: {}               # weight -> file relative to travail/, e.g. {400: polices/Text-400.ttf, 700: polices/Text-700.ttf}
+densite:                     # a4 in CSS px, diaporama in px on 1920 x 1080
+  a4: {corps: 14, cellule: 11.1, source: 10.4, legende: 10, titre: 27, marge_mm: 14, interligne: 1.33}
+  diaporama: {corps: 30, cellule: 24, source: 17, legende: 17, titre: 56, marge_px: 96, interligne: 1.3, mots_max: 70}
+images:
+  logo: ""                   # path relative to travail/; empty: no logo
+  logo_alt: ""
+  couverture: ""             # cover product or visual
+  couverture_alt: ""
+  couverture_credit: ""
+  largeur_max_px: 1600
+images_min: 3                # P6.21; 1 for a summary page
+blanc_max: 0.35              # P6.21: empty band, share of the height
+libelles: {sources: Sources, suite: "(continued)", total: Total, hypotheses: Hypotheses}   # words printed by the template, in the language of the deliverable
+etiquettes: []               # uncertainty tags highlighted, e.g. [ASSUMPTION, TO VERIFY]
+exposant: ""                 # pattern of the codes set in superscript, e.g. 'HYP-\d+(?:(?:,| to| and) HYP-\d+)*'
+unites: []                   # unit words of the protected (non-breaking) and checked numbers, besides % € $: ["weeks"]
+intertitres: false           # first words of a paragraph in bold
+formule: ""                  # pattern of the lines set in a formula box
+calculs_commandes: [""]      # calculs.py outputs that P6.22 accepts: "" (no argument), then its subcommands
+# Sheet plan (A4 document and slide deck); without this list: one sheet per page of the YAML, everything on it.
+# Keys of a sheet: page, gabarit (couverture, synthese, image, tableau, decision), suite (continuation sheet of the same page),
+#   pieces [indices of the pieces of the page], colonnes (A4: 1 or 2; deck: un, demi), tuiles (true), rupture (color slab),
+#   dense, roomy (A4), rail {image: i} or {piece: i}, rail_pos (texte or pieces) and droite [indices] (A4), diptyque (two images),
+#   image: i and pieces_a (deck), points (true: the `points` list replaces the body), fin (bottom line and sources on this sheet).
+feuilles: []
+# synthese_a4.py: the summary page and its layout (same keys as a sheet)
+# synthese: {page: 2, tuiles: true, points: true, pieces: [0]}

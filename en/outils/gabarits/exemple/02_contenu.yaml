@@ -1,0 +1,44 @@
+pages:
+- titre: "The workshop plan fits in three steps"
+  nature: INFÉRENCE
+  gabarit: couverture
+  corps: |
+    Invented example to test the templates.
+
+    Our answer: a plan in 3 steps, for a budget of 1,200 EUR.
+  bas: "The budget is 1,200 EUR, spread over 3 steps."
+  sources: ["Workshop assumption (example)"]
+  hypotheses: []
+- titre: "Three steps, 1,200 EUR, a decision in week 6"
+  nature: INFÉRENCE
+  gabarit: synthese
+  corps: |
+    The plan costs 1,200 EUR in total and runs over 6 weeks. Each step ends with a decision.
+
+    Step 1: frame, for 400 EUR. Step 2: measure, for 500 EUR. Step 3: decide, for 300 EUR.
+  points:
+  - "The plan costs 1,200 EUR over 6 weeks."
+  - "Each step ends with a decision."
+  bas: "Approve the budget of 1,200 EUR to start step 1."
+  sources: ["Workshop assumption (example)"]
+  hypotheses: []
+  tuiles:
+  - {valeur: "1,200 EUR", legende: "total budget", role: principal}
+  - {valeur: "6 weeks", legende: "to the decision", role: clair}
+  pieces:
+  - nom: "Budget by step"
+    colonnes: ["Step", "Amount (EUR)"]
+    lignes:
+    - ["Frame", "400"]
+    - ["Measure", "500"]
+    - ["Decide", "300"]
+    totaux: [["Total", "1,200"]]
+- titre: "After the decision, the plan closes with a review"
+  nature: OPINION
+  gabarit: decision
+  corps: |
+    The review goes back over the three steps and puts a figure on the gap to the budget of 1,200 EUR.
+  points: ["The review puts a figure on the gap to the budget."]
+  bas: "The review closes the plan."
+  sources: ["Workshop assumption (example)"]
+  hypotheses: []
