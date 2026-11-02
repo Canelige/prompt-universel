@@ -578,3 +578,4 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 
 Le cadre « Pour toi, avant de commencer » s'adresse à la personne et n'est pas balisé. Il est repris, adapté au noyau collé, en tête de `PROMPT_UNIVERSEL.md` : installer l'application (L7), créer l'atelier hors des dossiers synchronisés (L8), déposer des copies, jamais les originaux (L9-14), durée et veille de l'installation (L16), Opus et Auto (L18), message d'amorce et autorisation (L19), refus du mode Auto (L21), mot de passe (L22), interlocuteur unique (L23), nouveau travail (L24), commandes à taper puis « continue » (L25).
 | NO.1b | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | noyau | Qui tu es pour elle : assistant, ami, maître, accompagnant ; jamais de flatterie ni de froideur |
+| NO.1c | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | noyau | Objectif toujours, jamais un oui par défaut ; évalue, sépare fait et opinion, ne cède qu'à un argument |
