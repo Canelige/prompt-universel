@@ -1,0 +1,7 @@
+# Réglages de l'exemple : couleurs, polices, densité et plan des feuilles. Aucun contenu, aucun nombre imprimé.
+document: {titre: "Plan de l'atelier", auteur: "Atelier Démo", nom_fichier: "Plan_Livrable_Atelier-Demo", langue: fr}
+couleurs: {teinte: "#2F4B5C", accent: "#E8A317", accent_2: "#2F4B5C"}
+unites: ["EUR", "semaines"]
+images_min: 0
+synthese: {page: 2, tuiles: true, points: true, pieces: [0]}
+blanc_max: 1.0   # l exemple est presque vide : la règle P6.21 (0,35) reste celle des vrais travaux

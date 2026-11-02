@@ -1,0 +1,44 @@
+# Qui le lit, et quand : `diapo-fabricant`, qui le copie en <sous-dossier>/travail/reglages.yaml et le remplit : c'est la direction artistique du travail (phase 5), seule chose à écrire avec blocs.py. Aucun contenu et aucun nombre imprimé ici : ils sont dans 02_contenu.yaml.
+# Toute clé absente prend la valeur par défaut de commun.py (DEFAUTS).
+document:
+  titre: ""                  # défaut : le titre de la page 1
+  auteur: "[à compléter]"
+  sujet: ""
+  nom_fichier: "Sujet_Livrable_Auteur"   # P6.18, sans extension ni espace ni accent
+  langue: fr                 # <html lang> et PDF balisé (P6.15)
+couleurs:                    # tableau des rôles (DA.51) ; les rôles dérivés sont calculés par script (DA.44 à DA.47)
+  teinte: "#3A4A5C"          # teinte du fond et de l'encre (neutres teintés)
+  accent: "#E07A1F"
+  accent_2: "#3A4A5C"        # jamais plus de 10 % d'une page (DA.44)
+  series: {}                 # nom d'une catégorie -> couleur, ex. {Canada: "#C82E62", Japon: "#95C11F"} : en-têtes, barres, première colonne (DA.52)
+  roles: {}                  # forcer un rôle calculé, ex. {accent-fonce: "#9A5A00"}
+polices:
+  famille: "sans-serif"      # nom de la famille, tel que dans @font-face
+  fichiers: {}               # graisse -> fichier relatif à travail/, ex. {400: polices/Texte-400.ttf, 700: polices/Texte-700.ttf}
+densite:                     # a4 en px CSS, diaporama en px sur 1920 x 1080
+  a4: {corps: 14, cellule: 11.1, source: 10.4, legende: 10, titre: 27, marge_mm: 14, interligne: 1.33}
+  diaporama: {corps: 30, cellule: 24, source: 17, legende: 17, titre: 56, marge_px: 96, interligne: 1.3, mots_max: 70}
+images:
+  logo: ""                   # chemin relatif à travail/ ; vide : pas de logo
+  logo_alt: ""
+  couverture: ""             # produit ou visuel de couverture
+  couverture_alt: ""
+  couverture_credit: ""
+  largeur_max_px: 1600
+images_min: 3                # P6.21 ; 1 pour une page de synthèse
+blanc_max: 0.35              # P6.21 : bande vide, part de la hauteur
+libelles: {sources: Sources, suite: "(suite)", total: Total, hypotheses: Hypothèses}   # mots imprimés par le gabarit, dans la langue du livrable
+etiquettes: []               # tags d'incertitude mis en évidence, ex. [HYPOTHÈSE, À VÉRIFIER]
+exposant: ""                 # motif des codes mis en exposant, ex. 'HYP-\d+(?:(?:,| à| et) HYP-\d+)*'
+unites: []                   # mots-unités des nombres protégés (insécables) et contrôlés, en plus de % € $ : ["semaines"]
+intertitres: false           # premiers mots d'un paragraphe en gras
+formule: ""                  # motif des lignes en encadré de formule
+calculs_commandes: [""]      # sorties de calculs.py que P6.22 admet : "" (sans argument), puis ses sous-commandes
+# Plan des feuilles (document A4 et diaporama) ; sans cette liste : une feuille par page du YAML, tout dedans.
+# Clés d'une feuille : page, gabarit (couverture, synthese, image, tableau, decision), suite (feuille de suite de la même page),
+#   pieces [indices des pièces de la page], colonnes (A4 : 1 ou 2 ; diaporama : un, demi), tuiles (true), rupture (aplat de couleur),
+#   dense, roomy (A4), rail {image: i} ou {piece: i}, rail_pos (texte ou pieces) et droite [indices] (A4), diptyque (deux images),
+#   image: i et pieces_a (diaporama), points (true : la liste `points` remplace le corps), fin (bas et sources sur cette feuille).
+feuilles: []
+# synthese_a4.py : la page de synthèse et sa mise en page (mêmes clés qu'une feuille)
+# synthese: {page: 2, tuiles: true, points: true, pieces: [0]}

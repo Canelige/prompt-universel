@@ -1,0 +1,44 @@
+pages:
+- titre: "Le plan de l'atelier tient en trois étapes"
+  nature: INFÉRENCE
+  gabarit: couverture
+  corps: |
+    Exemple inventé pour tester les gabarits.
+
+    Notre réponse : un plan en 3 étapes, pour un budget de 1 200 EUR.
+  bas: "Le budget est de 1 200 EUR, répartis sur 3 étapes."
+  sources: ["Hypothèse de l'atelier (exemple)"]
+  hypotheses: []
+- titre: "Trois étapes, 1 200 EUR, une décision en semaine 6"
+  nature: INFÉRENCE
+  gabarit: synthese
+  corps: |
+    Le plan coûte 1 200 EUR au total et s'étend sur 6 semaines. Chaque étape finit par une décision.
+
+    Étape 1 : cadrer, pour 400 EUR. Étape 2 : mesurer, pour 500 EUR. Étape 3 : décider, pour 300 EUR.
+  points:
+  - "Le plan coûte 1 200 EUR sur 6 semaines."
+  - "Chaque étape finit par une décision."
+  bas: "Valide le budget de 1 200 EUR pour lancer l'étape 1."
+  sources: ["Hypothèse de l'atelier (exemple)"]
+  hypotheses: []
+  tuiles:
+  - {valeur: "1 200 EUR", legende: "budget total", role: principal}
+  - {valeur: "6 semaines", legende: "jusqu'à la décision", role: clair}
+  pieces:
+  - nom: "Budget par étape"
+    colonnes: ["Étape", "Montant (EUR)"]
+    lignes:
+    - ["Cadrer", "400"]
+    - ["Mesurer", "500"]
+    - ["Décider", "300"]
+    totaux: [["Total", "1 200"]]
+- titre: "Après la décision, le plan se referme sur un bilan"
+  nature: OPINION
+  gabarit: decision
+  corps: |
+    Le bilan reprend les trois étapes et chiffre l'écart au budget de 1 200 EUR.
+  points: ["Le bilan chiffre l'écart au budget."]
+  bas: "Le bilan ferme le plan."
+  sources: ["Hypothèse de l'atelier (exemple)"]
+  hypotheses: []
