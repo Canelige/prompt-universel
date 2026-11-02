@@ -6,13 +6,13 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[RÈGLE DA.2]** Il écrit `travail/05_charte.md`, `travail/tokens.css` et `travail/gabarits.css`, puis ajoute le champ `gabarit` à chaque page de `02_contenu.yaml`.
 
-**[IMPÉRATIF DA.3]** Une **charte d'école imposée** l'emporte : rythme, gabarits, graphiques et images se travaillent à l'intérieur.
+**[IMPÉRATIF DA.3]** Une **charte imposée** (école, entreprise, client) l'emporte, sur le goût de la personne comme sur les tirages : rythme, gabarits, graphiques et images se travaillent à l'intérieur.
 
 # Partie du chef (et du fabricant)
 
 ## Le niveau visé : beau d'abord, différent ensuite
 
-**[IMPÉRATIF DA.4]** Un rendu **beau, propre et pensé**, puis propre au groupe. La variété ne justifie jamais un rendu laid : tirage laid ou lourd, on le refait ; le veto de la planche vaut aussi en Express (sur l'unique direction, à la première planche de contrôle).
+**[IMPÉRATIF DA.4]** Un rendu **beau, propre et pensé**, puis propre à la personne. La variété ne justifie jamais un rendu laid : tirage laid ou lourd, on le refait ; le veto de la planche vaut aussi en Express (sur l'unique direction, à la première planche de contrôle).
 
 **[IMPÉRATIF DA.5]** **Couleur qui porte un sens**, expliquée, jamais tirée au hasard, et qui se voit : une page à peine teintée se lit comme une note de cabinet (plancher : « La couleur », point 9 e).
 
@@ -20,15 +20,15 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[RÈGLE DA.7]** **De vraies images choisies**, des tableaux et graphiques nets, une hiérarchie évidente.
 
-**[IMPÉRATIF DA.8]** **Peu de mots, pas peu de contenu** : toute la substance (chiffres, preuves, raisonnement, nuances) passe par la forme (`phase-2-contenu.md`, « La densité d'une page ») ; ce qui ne tient pas va en notes ou en annexe, jamais supprimé. Aéré mais creux : défaut GRAVE pour le professeur.
+**[IMPÉRATIF DA.8]** **Peu de mots, pas peu de contenu** : toute la substance (chiffres, preuves, raisonnement, nuances) passe par la forme (`phase-2-contenu.md`, « La densité d'une page ») ; ce qui ne tient pas va en notes ou en annexe, jamais supprimé. Aéré mais creux : défaut GRAVE pour le destinataire.
 
 ## Le sujet donne le ton
 
-**[IMPÉRATIF DA.9]** **Quand le sujet a une identité, elle donne le ton avant tout tirage.** Priorité 1, **marque ou entreprise réelle** (étudiée, ou cliente du cas) : logo officiel et couleurs de marque, pris sur son site, son kit presse ou sa charte publique (Wikimedia Commons a souvent le logo), avec crédit. Sa palette devient le tableau des rôles (« La couleur », point 12). Logo sur la couverture et, en petit, dans l'en-tête de chaque page ; jamais déformé, recoloré ni redessiné.
+**[IMPÉRATIF DA.9]** **Quand le sujet a une identité, elle donne le ton avant tout tirage.** Priorité 1, **marque ou entreprise réelle** (étudiée, cliente du cas, ou l'entreprise de la personne) : logo officiel et couleurs de marque, pris sur son site, son kit presse ou sa charte publique (Wikimedia Commons a souvent le logo), avec crédit. Sa palette devient le tableau des rôles (« La couleur », point 12). Logo sur la couverture et, en petit, dans l'en-tête de chaque page ; jamais déformé, recoloré ni redessiné.
 
 **[RÈGLE DA.10]** **La voix de la marque se reprend partout** : signature graphique (bandeau, motif, coins arrondis) sur chaque page, rayon d'angle de la marque = rayon unique de la charte, typographie de la marque (ou équivalente libre) pour les titres à la place du tirage de l'axe 2 ; la marque vaut justification pour une police-réflexe.
 
-**[RÈGLE DA.11]** **Contrôle** (phase 8, directeur artistique et client) : le logo masqué, la page doit encore se reconnaître comme celle de la marque.
+**[RÈGLE DA.11]** **Contrôle** (phase 8, directeur artistique et décideur) : le logo masqué, la page doit encore se reconnaître comme celle de la marque.
 
 **[RÈGLE DA.12]** Priorité 2, **pays, ville, lieu** : couleur emblématique qui porte un sens, expliquée en une phrase ; pas le drapeau en entier ni le folklore, sauf demande.
 
@@ -44,11 +44,11 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[RÈGLE DA.18]** Le tirage ne décide que de ce que l'identité laisse libre : polices (dans le respect de la marque), grille, couverture, graphiques.
 
-## Anti-générique : chaque groupe a un style à lui
+## Anti-générique : chaque personne a un style à elle
 
-**[RÈGLE DA.19]** **Les modules ne fixent aucune police, aucune couleur, aucune couverture** : tout vient du sujet, du goût du groupe et des tirages de `travail/tirer.py` dans les catalogues de `annexe-polices.md` et `annexe-palettes.md`. Commande : `python travail/tirer.py <étiquette> <k> "<option>" ...`, étiquette unique par tirage (`axes/2`, `d1/palette`, `d2/police-titre`…) ; le script rend k options distinctes et note tout dans `travail/tirages.log`.
+**[RÈGLE DA.19]** **Les modules ne fixent aucune police, aucune couleur, aucune couverture** : tout vient du sujet, du goût de la personne et des tirages de `travail/tirer.py` dans les catalogues de `annexe-polices.md` et `annexe-palettes.md`. Commande : `python travail/tirer.py <étiquette> <k> "<option>" ...`, étiquette unique par tirage (`axes/2`, `d1/palette`, `d2/police-titre`…) ; le script rend k options distinctes et note tout dans `travail/tirages.log`.
 
-**[RÈGLE DA.20]** **L'identité éditoriale avant la couleur.** En fin de phase 1, écris en tête de `05_charte.md` : thèse éditoriale en une phrase (« ce document se lit comme… »), objet ou métaphore visuelle tirés du sujet, grammaire des titres, grammaire des graphiques, langage des photos, 3 choix distinctifs et 3 choix à éviter. Deux groupes sur le même cours doivent différer par cette identité (architecture, grille, titres, données, images), pas seulement par la palette.
+**[RÈGLE DA.20]** **L'identité éditoriale avant la couleur.** En fin de phase 1, écris en tête de `05_charte.md` : thèse éditoriale en une phrase (« ce document se lit comme… »), objet ou métaphore visuelle tirés du sujet, grammaire des titres, grammaire des graphiques, langage des photos, 3 choix distinctifs et 3 choix à éviter. Deux personnes sur le même sujet doivent différer par cette identité (architecture, grille, titres, données, images), pas seulement par la palette.
 
 **[RÈGLE DA.21]** **Le goût prime sur le tirage** : tire parmi les options compatibles avec le sujet et le goût, même s'il n'en reste qu'une ou deux. L'énergie de l'étape C fixe l'axe 1 et n'est jamais tirée. Goût « sobre » : pas de fond sombre. Sans goût : tout le catalogue de l'énergie.
 
@@ -56,7 +56,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[IMPÉRATIF DA.23]** **Une série garde sa charte, et sa planche est comparée au meilleur rendu** : tokens, gabarits, polices et script de contrôle du livrable précédent repris, seules les teintes de partie changent ; écris « suite de <livrable précédent>, charte reprise ». La référence est l'épisode que la personne a le plus aimé (`profil.md`), pas le dernier : pose la planche du nouvel épisode à côté de la sienne ; plus dense, plus bigarré ou moins illustré, corrige avant de livrer.
 
-**[RÈGLE DA.24]** **Pas deux fois le même style pour la même personne** entre cours ou sujets différents (jamais entre volets d'une même série) : directions, palettes et polices de l'historique de `profil.md` retirées avant le tirage.
+**[RÈGLE DA.24]** **Pas deux fois le même style pour la même personne** entre matières, clients ou sujets différents (jamais entre volets d'une même série) : directions, palettes et polices de l'historique de `profil.md` retirées avant le tirage.
 
 **[RÈGLE DA.25]** **Écarte la première idée qui vient** : note le choix « évident » écarté dans `05_charte.md`.
 
@@ -113,7 +113,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[IMPÉRATIF DA.41]** Interdit, vérifié par le directeur artistique et en partie par `controles.py` :
 - un fond crème, avec un titre en serif contrasté, un mot en italique et un accent terracotta ;
-- un sur-titre décoratif qui répète le titre (une étiquette d'étape utile à la navigation, comme le nom de l'étape du cours, reste permise) ;
+- un sur-titre décoratif qui répète le titre (une étiquette d'étape utile à la navigation, comme le nom de l'étape de la référence, reste permise) ;
 - des « 01, 02, 03 » décoratifs ;
 - une rangée de 3 cartes identiques, ou de 3 grands chiffres (en Vivant, les tuiles de chiffres clés en aplat sont permises, chacune dans la couleur de son rôle) ;
 - une barre épaisse sur le bord gauche d'un encadré (en Vivant, la carte à liseré coloré fin est permise), des pastilles décoratives (pas la pastille de statut du point 9 f), des cartes arrondies partout (le rayon d'angle de la marque, repris tel quel, est permis) ;
@@ -177,7 +177,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[RÈGLE DA.62]** **11. Grammaire de la couleur** : une famille de teinte par partie de l'argument, gardée du début à la fin du livrable et d'un livrable à l'autre dans une série ; la charte l'écrit en une ligne (« teinte A pour l'analyse, teinte B pour les choix, teinte C pour la décision »). Variable à catégories du point 9 d : jamais de teinte hors du tableau des rôles, limite de teintes par page maintenue.
 
-**[IMPÉRATIF DA.63]** **12. Marque imposée** (palette de marque ou charte d'école fournie) : cette palette est le tableau des rôles ; pas de tirage dans `annexe-palettes.md`, pas de décalage de teinte (points 1 à 4), pas de couleur ajoutée.
+**[IMPÉRATIF DA.63]** **12. Marque imposée** (palette de marque, ou charte de l'entreprise, du client ou de l'école fournie) : cette palette est le tableau des rôles ; pas de tirage dans `annexe-palettes.md`, pas de décalage de teinte (points 1 à 4), pas de couleur ajoutée.
 
 **[RÈGLE DA.64]** Chaque rôle prend une couleur de la palette imposée ; s'il y a moins de couleurs que de rôles, des rôles partagent une couleur et se distinguent par un mot, un signe ou l'intensité. Les exigences contraires tombent : une teinte par partie (point 11, axe 7) n'existe que si la palette l'offre ; la limite de 10 % d'`accent-2` ne joue pas entre couleurs de marque.
 
@@ -228,7 +228,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 ## Le rythme et les gabarits
 
-**[RÈGLE DA.79]** **Les 10 gabarits** (un par page) : 1. **Couverture**, un seul élément dominant ; 2. **Synthèse** ; 3. **Séparateur de partie** ; 4. **Graphique commenté** (graphique sur 60 % de la largeur, lecture à côté) ; 5. **Tableau du cours**, pleine largeur ; 6. **Comparaison** (2 ou 3 colonnes séparées par des filets, jamais des cartes, sauf les cartes à liseré du Vivant) ; 7. **Chiffre unique** ; 8. **Image ou carte** ; 9. **Cheminement** (frise, étapes, flux) ; 10. **Décision**, 2 pages au plus : page 1, la décision, les conditions, le coût et le gain, le critère d'arrêt ; page 2, les actions, les indicateurs, la première étape à 30 jours.
+**[RÈGLE DA.79]** **Les 10 gabarits** (un par page) : 1. **Couverture**, un seul élément dominant ; 2. **Synthèse** ; 3. **Séparateur de partie** ; 4. **Graphique commenté** (graphique sur 60 % de la largeur, lecture à côté) ; 5. **Tableau de la référence**, pleine largeur ; 6. **Comparaison** (2 ou 3 colonnes séparées par des filets, jamais des cartes, sauf les cartes à liseré du Vivant) ; 7. **Chiffre unique** ; 8. **Image ou carte** ; 9. **Cheminement** (frise, étapes, flux) ; 10. **Décision**, 2 pages au plus : page 1, la décision, les conditions, le coût et le gain, le critère d'arrêt ; page 2, les actions, les indicateurs, la première étape à 30 jours.
 
 **[RÈGLE DA.80]** **Couverture** (gabarit 1) : image de produit jamais sur un fond de sa propre couleur dominante (un script mesure le contraste entre les deux, 3:1 au moins) ; image d'environ 55 % de la largeur, ombre douce si elle est détourée ; 3 chiffres au plus.
 
@@ -278,7 +278,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[RÈGLE DA.94]** **De vraies images, choisies** : preuve ou repère, jamais décor ; au sujet, récentes si possible ; pour comparer des options, un diptyque de même hauteur et de même format. Sinon, pas de photo : un schéma, une carte ou un graphique la remplace. Quand elles existent, 3 images pertinentes dans un diaporama de 8 pages et plus (lieux, produits, documents du cas, personnes au travail), dont une sur la couverture si la direction le permet. Un livrable fait seulement de tableaux : défaut MOYEN pour le directeur artistique.
 
-**[RÈGLE DA.95]** **Sources**, téléchargées par script Python : fichiers fournis par le groupe ; Wikimedia Commons, API sans clé (`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&prop=imageinfo&iiprop=url|extmetadata&format=json`), qui donne l'auteur et la licence, avec une pause d'une seconde entre deux requêtes (sinon erreur 429) ; visuels officiels de produit d'une marque réelle, pris sur son site, crédit « © marque » ; Natural Earth pour les cartes (`https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip`), dessinées en SVG ; Unsplash et Pexels, seulement si le groupe fournit l'image ; une seule famille de pictogrammes (Lucide ou Phosphor), pour une catégorie qui revient.
+**[RÈGLE DA.95]** **Sources**, téléchargées par script Python : fichiers fournis par la personne ; Wikimedia Commons, API sans clé (`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&prop=imageinfo&iiprop=url|extmetadata&format=json`), qui donne l'auteur et la licence, avec une pause d'une seconde entre deux requêtes (sinon erreur 429) ; visuels officiels de produit d'une marque réelle, pris sur son site, crédit « © marque » ; Natural Earth pour les cartes (`https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip`), dessinées en SVG ; Unsplash et Pexels, seulement si la personne fournit l'image ; une seule famille de pictogrammes (Lucide ou Phosphor), pour une catégorie qui revient.
 
 **[RÈGLE DA.96]** **Crédit** dans `travail/credits.md`, et sous l'image.
 

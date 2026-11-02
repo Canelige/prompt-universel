@@ -11,9 +11,9 @@ Qui le lit, et quand : `diapo-verificateur`, avec `principes.md`, en phase 1 (ch
 
 **[RÈGLE P3.2]** **EXTERNE** : un marché, une vraie entreprise, une loi ; source primaire datée.
 
-**[IMPÉRATIF P3.3]** **CAS** : donnée fournie par le professeur (cas, annexe, appel d'offres). Elle fait foi : document et page cités, cohérence contrôlée seulement. Elle ne sort jamais du livrable faute de source web.
+**[IMPÉRATIF P3.3]** **CAS** : donnée fournie par le destinataire (cas du professeur, données du client ou de l'entreprise, annexe, appel d'offres). Elle fait foi : document et page cités, cohérence contrôlée seulement. Elle ne sort jamais du livrable faute de source web.
 
-**[RÈGLE P3.4]** **PRIMAIRE** : donnée produite par le groupe, avec effectif, date, recrutement et limite ; réponses brutes dans `travail/collecte/`.
+**[RÈGLE P3.4]** **PRIMAIRE** : donnée produite par la personne, avec effectif, date, recrutement et limite ; réponses brutes dans `travail/collecte/`.
 
 **[IMPÉRATIF P3.5]** **TÉMOIGNAGE** : exemple vécu ou observé, écrit « nous avons observé… ». Il illustre, mais ne prouve jamais un chiffre ni une tendance.
 
@@ -49,7 +49,7 @@ Qui le lit, et quand : `diapo-verificateur`, avec `principes.md`, en phase 1 (ch
 
 ## Les règles
 
-**[RÈGLE P3.19]** Source primaire (un blog est une « estimation sectorielle ») ; le cours donne la méthode, jamais un fait de marché ; chiffre de plus de 3 ans : année affichée ; ni années ni périmètres mélangés.
+**[RÈGLE P3.19]** Source primaire (un blog est une « estimation sectorielle ») ; la référence donne la méthode, jamais un fait de marché ; chiffre de plus de 3 ans : année affichée ; ni années ni périmètres mélangés.
 
 **[RÈGLE P3.20]** Statistiques justes (marge d'erreur, effectif, écart significatif), calculées par l'agent Agency `Statistician` s'il est installé, avec `model: sonnet`.
 

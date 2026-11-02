@@ -21,7 +21,7 @@ Qui le lit, et quand : le chef, dès le premier message, s'il ne tourne pas dans
 **[RÈGLE CX.7]** Tous les modules s'appliquent, sauf ce qui est propre à Claude Code : `/usage`, `/autocompact`, `/model`, l'anneau de jauge, `SendMessage`, le fork, le paramètre `model`, `omitClaudeMd`, `maxTurns`, l'import `@`, le contrôle d'isolement par journal, les outils de sessions et de barre latérale de l'application de bureau.
 
 **[RÈGLE CX.8]** Replis :
-- sans relevé d'usage, le mode se choisit sur le temps du groupe seul, et l'arrêt D se déclenche quand l'outil annonce une limite ;
+- sans relevé d'usage, le mode se choisit sur le temps de la personne seul, et l'arrêt D se déclenche quand l'outil annonce une limite ;
 - un agent coupé se reprend par un agent neuf ;
 - `AGENTS.md` porte la ligne « Lis `universel/PROMPT_UNIVERSEL.md`, `profil.md`, puis `ETAT_COURANT.md`, puis, dans une discussion de projet, le `ETAT.md` de son sous-dossier, en premier » à la place des imports ;
 - les rapports d'audit portent la mention « isolement non vérifié » ;

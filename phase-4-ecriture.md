@@ -18,7 +18,7 @@ Qui le lit, et quand : `diapo-redacteur`, avec `principes.md`, en phase 4 et pou
 
 **[RÈGLE P4.8]** **Les structures** : la triade forcée, le « pas X mais Y » à répétition, la phrase-chute en fin de paragraphe.
 
-**[RÈGLE P4.9]** **4. Le ton** : verbes actifs, sujets concrets (« le distributeur importe », pas « l'importation est assurée »), celui d'un groupe d'étudiants sérieux, pas d'une plaquette commerciale.
+**[RÈGLE P4.9]** **4. Le ton** : verbes actifs, sujets concrets (« le distributeur importe », pas « l'importation est assurée »), celui de professionnels sérieux (à l'école, d'un groupe d'étudiants sérieux), pas d'une plaquette commerciale.
 
 **[RÈGLE P4.10]** **5. La typographie française** : espace insécable avant « : ; ! ? % », à l'intérieur des guillemets « », entre un nombre et son unité, dans les milliers ; apostrophe typographique.
 

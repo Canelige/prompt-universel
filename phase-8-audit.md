@@ -8,19 +8,19 @@ Qui le lit, et quand : la discussion de projet, en phase 8, pour préparer `audi
 
 ## Préparation, par script
 
-**[RÈGLE P8.3]** `audit/` contient seulement : le PDF et `livrable.txt` ; `titres.txt` (les seuls titres, dans l'ordre) ; `consignes_originales.txt` (énoncé, question, contraintes, extraits du document d'origine) ; `grille_originale.txt`, extraite du document d'origine et non de ta copie (grille présumée : `grille_presumee.txt`, étiquette en tête, total annoncé « sur grille présumée ») ; les pages du cours et du cas citées dans `01_cadrage.md` et les lignes CAS ; la planche des miniatures ; `objections_phase1.txt` (les 5 objections de `01_contre_expertise.md`, **sans tes réponses**) ; `cours_plan.txt` (plan du cours, outils attendus de `00_materiel.md`) ; `consignes_audit.md` (copie de `principes.md` et de « Ce que fait chacun », sans les blocs « Chef : »).
+**[RÈGLE P8.3]** `audit/` contient seulement : le PDF et `livrable.txt` ; `titres.txt` (les seuls titres, dans l'ordre) ; `consignes_originales.txt` (énoncé, question, contraintes, extraits du document d'origine) ; `criteres_originaux.txt`, extraits du document d'origine et non de ta copie (critères présumés : `criteres_presumes.txt`, étiquette en tête, total annoncé « sur critères présumés ») ; les pages de la référence et du cas citées dans `01_cadrage.md` et les lignes CAS ; la planche des miniatures ; `objections_phase1.txt` (les 5 objections de `01_contre_expertise.md`, **sans tes réponses**) ; `reference_plan.txt` (plan de la référence, outils attendus de `00_materiel.md`) ; `consignes_audit.md` (copie de `principes.md` et de « Ce que fait chacun », sans les blocs « Chef : »).
 
 **[RÈGLE P8.4]** **En plus, selon l'auditeur.** **Vérificateur** : `03_verification.md`, `donnees.csv`.
 
 **[RÈGLE P8.5]** **Directeur artistique** : 6 pages en grand choisies par script (couverture, synthèse, 2 graphiques, 1 rupture, décision) ; versions réduites et grises ; `interdits.txt` (« Ce qui trahit l'IA » de `direction-artistique.md` et polices-réflexes de `annexe-polices.md`, extraits par script) ; `05_charte.md`, seulement dans un second temps.
 
-**[RÈGLE P8.6]** **Jury ou contradicteur** : le brief du cas et le rôle que le cours lui donne.
+**[RÈGLE P8.6]** **Jury ou contradicteur** : le brief du cas et le rôle que les consignes lui donnent.
 
-**[RÈGLE P8.7]** **Client** : `decideur.txt` (copié par script depuis le lecteur de `01_cadrage.md`) et, s'il y a une marque, son logo et ses couleurs officielles. Jamais la charte du groupe.
+**[RÈGLE P8.7]** **Décideur** : `decideur.txt` (copié par script depuis le lecteur de `01_cadrage.md`) et, s'il y a une marque, son logo et ses couleurs officielles. Jamais la charte du livrable.
 
 ## Lancement
 
-**[RÈGLE P8.8]** Les auditeurs partent **dans un même message**, en parallèle, chacun avec son angle (`professeur`, `verificateur`, `direction-artistique`, `contradicteur`, `client`), l'expert (`diapo-expert`) dans le même message. Sans agents : `pilotage.md`, « Sans agents ».
+**[RÈGLE P8.8]** Les auditeurs partent **dans un même message**, en parallèle, chacun avec son angle (`destinataire`, `verificateur`, `direction-artistique`, `contradicteur`, `decideur`), l'expert (`diapo-expert`) dans le même message. Sans agents : `pilotage.md`, « Sans agents ».
 
 **[IMPÉRATIF P8.9]** Tout ce qu'un auditeur reçoit est copié par script dans `audit/`, jamais cité par son chemin dans `travail/`.
 
@@ -32,7 +32,7 @@ Qui le lit, et quand : la discussion de projet, en phase 8, pour préparer `audi
 
 ## Ce que fait chacun
 
-**[IMPÉRATIF P8.13]** **Le professeur** note sévèrement. Départ : moyenne de la promotion, 12/20 ; un critère ne monte que sur une preuve citée (page et chiffre). Plafonds : question non traitée 8/20 ; recommandation absente ou contredite par les chiffres 10/20 ; chiffre inventé 12/20. Par critère : note, preuve, ce qu'il manque pour le palier suivant.
+**[IMPÉRATIF P8.13]** **Le destinataire** (professeur, client, manager ou jury, d'après le lecteur de `01_cadrage.md`) note sévèrement, sur 20 dans tous les contextes. Départ : 12/20, la moyenne d'une promotion ou un livrable correct que personne ne retient ; un critère ne monte que sur une preuve citée (page et chiffre). Plafonds : question non traitée 8/20 ; recommandation absente ou contredite par les chiffres 10/20 ; chiffre inventé 12/20. Par critère : note, preuve, ce qu'il manque pour le palier suivant.
 
 **[RÈGLE P8.14]** Puis **10 tests**, notés 0 (absent), 1 (présent mais non prouvé) ou 2 (présent, avec la page qui le prouve) :
 1. **Réponse d'abord** : la première page donne la réponse, 3 raisons et sa preuve reine.
@@ -46,9 +46,9 @@ Qui le lit, et quand : la discussion de projet, en phase 8, pour préparer `audi
 9. **Exécutable** : responsable, échéance, livrable, indicateurs, critère d'arrêt.
 10. **Cohérence** : même chiffre, même vocabulaire, même décision partout, aucune donnée défavorable écartée.
 
-**[RÈGLE P8.15]** Test à 0 : point GRAVE ; test à 1 : point MOYEN ; test que la grille et la matière n'appellent pas : « sans objet ». Total des tests ramené sur 20, rendu à part de la note de la grille.
+**[RÈGLE P8.15]** Test à 0 : point GRAVE ; test à 1 : point MOYEN ; test que les critères et le domaine n'appellent pas : « sans objet ». Total des tests ramené sur 20, rendu à part de la note des critères.
 
-**[RÈGLE P8.16]** **Palier 17** : au-delà de 15/20 sur un critère, trois preuves, chacune avec sa page, sinon plafond à 15. 1. **Cours maîtrisé** : notions utiles d'après `cours_plan.txt` employées avec leur définition exacte, manquantes listées. 2. **Cours dépassé** : limite d'un outil du cours discutée pour ce cas. 3. **Appui savant** : deux références (auteur, année), chacune reliée à un argument.
+**[RÈGLE P8.16]** **Palier 17** : au-delà de 15/20 sur un critère, trois preuves, chacune avec sa page, sinon plafond à 15. 1. **Référence maîtrisée** : notions utiles d'après `reference_plan.txt` employées avec leur définition exacte, manquantes listées. 2. **Référence dépassée** : limite d'un outil de la référence discutée pour ce cas. 3. **Appui savant** : deux références (auteur, année), chacune reliée à un argument.
 
 **[RÈGLE P8.17]** **Réfutation** : en 5 lignes, la meilleure raison de rejeter la recommandation ; sans réponse du livrable : GRAVE. **Les 3 questions les plus dangereuses** : une question sans réponse dans le livrable est un point MOYEN.
 
@@ -60,23 +60,23 @@ Qui le lit, et quand : la discussion de projet, en phase 8, pour préparer `audi
 
 **[RÈGLE P8.20]** Un interdit de `interdits.txt`, ou un regard neuf « propre, neutre, générique » : GRAVE.
 
-**[IMPÉRATIF P8.21]** **L'expert de la branche** (`diapo-expert`, rôle tiré de la table du profil de la matière, `phase-1-cadrage.md`) lit comme ce professionnel : ce qui est faux, naïf ou non professionnel (vocabulaire, ordres de grandeur, pratiques, réglementation) ; ce qu'il ferait autrement, et pourquoi ; l'objection la plus forte de la contre-expertise est-elle bien traitée ? Un point faux dans le métier : GRAVE.
+**[IMPÉRATIF P8.21]** **L'expert de la branche** (`diapo-expert`, rôle tiré de la table du profil du domaine, `phase-1-cadrage.md`) lit comme ce professionnel : ce qui est faux, naïf ou non professionnel (vocabulaire, ordres de grandeur, pratiques, réglementation) ; ce qu'il ferait autrement, et pourquoi ; l'objection la plus forte de la contre-expertise est-elle bien traitée ? Un point faux dans le métier : GRAVE.
 
-**[RÈGLE P8.22]** **Le contradicteur, ou le jury** (si le cours fait jouer ce rôle, et toujours en Approfondi) : ce qu'il refuserait de signer, la pire hypothèse, un pre-mortem.
+**[RÈGLE P8.22]** **Le contradicteur, ou le jury** (si les consignes font jouer ce rôle, et toujours en Approfondi) : ce qu'il refuserait de signer, la pire hypothèse, un pre-mortem.
 
-**[IMPÉRATIF P8.23]** **Le client** (`diapo-auditeur`, angle `client`, dans tous les modes, Express compris) joue le décideur du cas : la directrice marketing de la marque s'il y a une marque, sinon le décideur que le cadrage a nommé. Il voit le livrable comme le client qui choisit l'agence ; il passe discrètement, sans jamais interrompre le groupe, et le chef applique ses corrections comme celles des autres. Il rend : l'impression des 30 premières secondes (couleur, énergie, « est-ce que je me reconnais ? ») ; ce qui donne confiance et ce qui fait douter ; « est-ce que je signe ? » ; les 3 changements qui le convaincraient.
+**[IMPÉRATIF P8.23]** **Le décideur** (`diapo-auditeur`, angle `decideur`, dans tous les modes, Express compris) joue le décideur du cas : la directrice marketing de la marque concernée s'il y a une marque, sinon le décideur que le cadrage a nommé. Il voit le livrable comme celui qui doit signer, le client qui choisit l'agence ; il passe discrètement, sans jamais interrompre la personne, et le chef applique ses corrections comme celles des autres. Il rend : l'impression des 30 premières secondes (couleur, énergie, « est-ce que je me reconnais ? ») ; ce qui donne confiance et ce qui fait douter ; « est-ce que je signe ? » ; les 3 changements qui le convaincraient.
 
-**[RÈGLE P8.24]** Avec une marque, « je ne me reconnais pas » ou « ça ne nous ressemble pas » est GRAVE ; le client contrôle aussi la voix de marque (logo masqué).
+**[RÈGLE P8.24]** Avec une marque, « je ne me reconnais pas » ou « ça ne nous ressemble pas » est GRAVE ; le décideur contrôle aussi la voix de marque (logo masqué).
 
 **[IMPÉRATIF P8.25]** Tout constat cite la page, un extrait et le critère touché ; un constat sans citation est supprimé.
 
 ## Chef : qui audite selon le mode
 
-**[IMPÉRATIF P8.26]** **Les trois regards, dans tous les modes** : le professeur, le directeur artistique et le client. Express : ces trois, le directeur artistique en un seul temps (le regard neuf) ; l'expert de la phase 1 reste obligatoire, celui de la phase 8 est sauté. Standard : professeur, vérificateur, directeur artistique, expert de la branche et client, plus le contradicteur si le cours fait jouer un jury. Approfondi : les six.
+**[IMPÉRATIF P8.26]** **Les trois regards, dans tous les modes** : le destinataire, le directeur artistique et le décideur. Express : ces trois, le directeur artistique en un seul temps (le regard neuf) ; l'expert de la phase 1 reste obligatoire, celui de la phase 8 est sauté. Standard : destinataire, vérificateur, directeur artistique, expert de la branche et décideur, plus le contradicteur si les consignes font jouer un jury. Approfondi : les six.
 
 ## Chef : arbitrage
 
-**[IMPÉRATIF P8.27]** L'exactitude d'abord : un chiffre faux ou une source introuvable se corrige ou sort, quelle que soit la grille. Ensuite la grille, puis la charte : un critère que la correction laisse sans page est couvert autrement (preuve qualitative, HYPOTHÈSE chiffrée) et signalé. Chaque arbitrage tient en une ligne.
+**[IMPÉRATIF P8.27]** L'exactitude d'abord : un chiffre faux ou une source introuvable se corrige ou sort, quels que soient les critères. Ensuite les critères, puis la charte : un critère que la correction laisse sans page est couvert autrement (preuve qualitative, HYPOTHÈSE chiffrée) et signalé. Chaque arbitrage tient en une ligne.
 
 ## Chef : corrections
 

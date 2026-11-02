@@ -15,7 +15,7 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, avec `direction-artistique
 | PDF (diaporama) | HTML et CSS → Playwright → PDF |
 | Document A4 | HTML paginé (`@page`, en-tête, pied, numéros) → PDF |
 | PPTX fidèle | une image 3840 × 2160 par page : PNG pour le texte, les graphiques et les aplats, JPEG qualité 85 pour une photo plein cadre ; notes conservées, texte alternatif = titre ; texte ni modifiable ni sélectionnable |
-| PPTX modifiable, Google Slides, Keynote | skill `pptx`, vraies zones de texte ; polices de la charte si elles viennent de Google Fonts (Google Slides les propose toutes ; sur PowerPoint, le groupe les installe depuis `travail/polices/`, et le rapport le dit), sinon repli ci-dessous ; couleurs, gabarits et rythme de la charte ; le PDF rendu avec les vraies polices est livré à côté |
+| PPTX modifiable, Google Slides, Keynote | skill `pptx`, vraies zones de texte ; polices de la charte si elles viennent de Google Fonts (Google Slides les propose toutes ; sur PowerPoint, la personne les installe depuis `travail/polices/`, et le rapport le dit), sinon repli ci-dessous ; couleurs, gabarits et rythme de la charte ; le PDF rendu avec les vraies polices est livré à côté |
 | HTML | skill `frontend-slides`, fichier unique, polices en base64, aucune ressource distante |
 | Word | skill `docx`, vrais styles, table des matières |
 
@@ -23,7 +23,7 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, avec `direction-artistique
 
 **[RÈGLE P6.5]** **Polices** : avant tout `soffice`, copie `travail/polices/` dans le dossier de polices de l'utilisateur (Mac : `~/Library/Fonts/` ; Windows : installation de la police), sans quoi le contrôle des débordements ne vaut rien.
 
-**[RÈGLE P6.6]** Si le groupe ne peut pas installer les polices d'un PPTX modifiable : repli Cambria pour les titres, Calibri pour le texte (jamais Georgia), 10 % de marge dans chaque zone de texte.
+**[RÈGLE P6.6]** Si la personne ne peut pas installer les polices d'un PPTX modifiable : repli Cambria pour les titres, Calibri pour le texte (jamais Georgia), 10 % de marge dans chaque zone de texte.
 
 **[RÈGLE P6.7]** **Graphiques** : le SVG de `build.py` converti en PNG à 3 fois sa taille d'affichage (Playwright, `device_scale_factor=3`), inséré avec la conclusion du graphique en texte alternatif.
 
@@ -49,7 +49,7 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, avec `direction-artistique
 
 **[RÈGLE P6.17]** **Poids** mesuré avant de déclarer le livrable prêt ; s'il est lourd, `doc.save(..., garbage=4, deflate=True)`.
 
-**[RÈGLE P6.18]** **Noms de fichier** : `Sujet_Livrable_Groupe.pdf`, sans espaces ni accents, suivi de `_version-a-completer` si le livrable a encore des trous (phase 9).
+**[RÈGLE P6.18]** **Noms de fichier** : `Sujet_Livrable_Auteur.pdf` (l'auteur : la personne, son équipe ou son entreprise), sans espaces ni accents, suivi de `_version-a-completer` si le livrable a encore des trous (phase 9).
 
 **[RÈGLE P6.19]** **Livraison** : le livrable final (PDF, plus PPTX ou Word) va dans `<sous-dossier>/livraison/`, que `build.py` crée par chemin absolu ; `travail/` garde le reste. `build.py` écrit aussi `travail/livrable.txt`, le texte du PDF final page par page.
 

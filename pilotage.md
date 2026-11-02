@@ -2,7 +2,7 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 
 # Pilotage : quand tu avances, quand tu t'arrêtes
 
-« Tu » désigne ici la discussion de projet ; quand le chef mène lui-même le projet (`demarrage.md`, « Sans discussion séparée possible »), c'est lui. Tout message « au groupe » passe par `travail/POUR_LE_CHEF.md` et le chef (`demarrage.md`, « Les discussions de projet »).
+« Tu » désigne ici la discussion de projet ; quand le chef mène lui-même le projet (`demarrage.md`, « Sans discussion séparée possible »), c'est lui. Tout message « à la personne » passe par `travail/POUR_LE_CHEF.md` et le chef (`demarrage.md`, « Les discussions de projet »).
 
 ## Les arrêts
 
@@ -10,26 +10,26 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 
 **[RÈGLE PI.2]** **A. Questions**, au démarrage : l'étape C (`demarrage.md`), posée par le chef.
 
-**[RÈGLE PI.3]** **B. Aperçu**, fin de la phase 1. Écris `travail/arret_B.md` avec : la question et la réponse, une phrase chacune ; si ta réponse diffère de l'avis du groupe, l'écart et le chiffre qui l'explique ; la liste des titres ; les 3 objections les plus fortes de l'expert et ce que tu en as fait ; les choix faits à la place du groupe ; le chemin complet de la planche des 3 directions. Puis, dans `POUR_LE_CHEF.md`, en 6 lignes au plus : l'essentiel et deux questions. Le chef ouvre la planche (`open` sur Mac, `start` sous Windows) et relaie.
+**[RÈGLE PI.3]** **B. Aperçu**, fin de la phase 1. Écris `travail/arret_B.md` avec : la question et la réponse, une phrase chacune ; si ta réponse diffère de l'avis de la personne, l'écart et le chiffre qui l'explique ; la liste des titres ; les 3 objections les plus fortes de l'expert et ce que tu en as fait ; les choix faits à la place de la personne ; le chemin complet de la planche des 3 directions. Puis, dans `POUR_LE_CHEF.md`, en 6 lignes au plus : l'essentiel et deux questions. Le chef ouvre la planche (`open` sur Mac, `start` sous Windows) et relaie.
 - Question 1 : « Je pars sur la direction 1 avec ces titres ? » a) oui ; b) direction 2 ; c) direction 3 ; d) je corrige les titres.
 - Question 2, avec les deux collectes de première main, une ligne chacune (quoi, auprès de qui, combien, durée), protocole prêt dans `travail/collecte/protocole.md` : « e) on fait la collecte 1 ; f) la 2 ; g) aucune ».
 - Ajoute : « Lis aussi ton usage et donne-moi les deux pourcentages. »
 
-**[IMPÉRATIF PI.4]** **La collecte.** Si le groupe en fait une, il dépose les réponses brutes dans `travail/collecte/` et écrit « collecte déposée » au chef avant la phase 7 ; tu l'intègres au prochain arrêt C. Tu n'écris jamais toi-même un résultat de collecte.
+**[IMPÉRATIF PI.4]** **La collecte.** Si la personne en fait une, elle dépose les réponses brutes dans `travail/collecte/` et écrit « collecte déposée » au chef avant la phase 7 ; tu l'intègres au prochain arrêt C. Tu n'écris jamais toi-même un résultat de collecte.
 
 **[RÈGLE PI.5]** **L'arrêt B en Express** : pas de planche, tu appliques l'énergie de l'étape C et l'unique direction retenue ; si l'usage relevé à l'arrêt A dépasse 60 %, l'arrêt B est maintenu, réduit aux titres et au relevé d'usage ; sinon tu envoies les titres au chef et tu continues sans attendre.
 
 **[RÈGLE PI.6]** **C. Compactage**, à la fin des phases 3 et 7, ou après 8 ordres de mission depuis le dernier compactage, ou à la livraison (phase 9), une fois qu'aucun agent ne tourne (tous leurs statuts lus) : mets `ETAT.md` à jour, écris l'arrêt C dans `POUR_LE_CHEF.md`, puis **termine ton tour**. Le chef, lui, propose `/compact` dans sa propre conversation à « Nouveau travail » si son contexte dépasse 50 %.
 
-**[RÈGLE PI.7]** **Message de l'arrêt C**, que le chef transmet mot pour mot : « Pause d'économie. Ouvre la discussion <titre>, tape `/compact garde la phase en cours, les décisions du groupe et les ordres en cours`, puis écris-y « continue ». Ensuite, lis ton usage et donne-moi les deux pourcentages. »
+**[RÈGLE PI.7]** **Message de l'arrêt C**, que le chef transmet mot pour mot : « Pause d'économie. Ouvre la discussion <titre>, tape `/compact garde la phase en cours, les décisions de la personne et les ordres en cours`, puis écris-y « continue ». Ensuite, lis ton usage et donne-moi les deux pourcentages. »
 
 **[RÈGLE PI.8]** **D. Forfait** : une jauge relevée dépasse 90 %, ou Claude Code annonce une limite de session ou de semaine. Mets `ETAT.md` à jour, écris l'arrêt D au chef, puis termine ton tour. Le chef écrit : « Je m'arrête pour garder une marge. Quand l'anneau ou `/usage` montre que ton forfait est réinitialisé, reviens me voir et écris : continue. On reprendra au PROCHAIN GESTE. »
 
 **[RÈGLE PI.9]** **Une limite propre à Opus n'est pas un arrêt D**, et c'est la seule exception à « le chef reste en Opus » : le chef propose d'attendre l'heure de fin de la limite ou de continuer en Sonnet jusqu'à elle ; note « chef en Sonnet » dans `ETAT.md` ; dès qu'elle passe, le chef demande de rechoisir Opus dans le sélecteur de modèle.
 
-**[RÈGLE PI.10]** **E. Blocage réel** : consignes contradictoires, fichier illisible, outil introuvable après installation ; avant la phase 9, des éléments que seul le groupe connaît (noms de l'équipe, règle de l'école sur l'IA). Une question courte au chef, avec des choix ou une liste à remplir. Des agents introuvables ne sont pas un arrêt : « Sans agents », en une ligne.
+**[RÈGLE PI.10]** **E. Blocage réel** : consignes contradictoires, fichier illisible, outil introuvable après installation ; avant la phase 9, des éléments que seule la personne connaît (noms de l'équipe ou de l'auteur, règle de l'école ou de l'entreprise sur l'IA). Une question courte au chef, avec des choix ou une liste à remplir. Des agents introuvables ne sont pas un arrêt : « Sans agents », en une ligne.
 
-**[RÈGLE PI.11]** **Une grille introuvable n'est pas un blocage** : écris une grille présumée (`phase-1-cadrage.md`) et continue.
+**[RÈGLE PI.11]** **Des critères introuvables ne sont pas un blocage** : écris des critères présumés (`phase-1-cadrage.md`) et continue.
 
 **[RÈGLE PI.12]** **Limite en plein tour** : rien ne s'écrit, `ETAT.md` fait foi à la reprise. Un agent dont le statut n'est pas `FIN: OK` est relancé neuf, avec « reprends après les lignes déjà écrites dans <fichier> » (son identifiant ne survit pas à une nouvelle session).
 
@@ -42,7 +42,7 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 **[RÈGLE PI.15]**
 - **Au démarrage** : la table des modes (`demarrage.md`, D).
 - **Au-dessus de 50 %** : jamais de changement de modèle ; tu conseilles.
-- **Au-dessus de 70 %** : allège la suite dans cet ordre, en t'arrêtant dès que c'est suffisant, et dis-le en une ligne : 1. phase 8 avec le professeur, le client et le directeur artistique seulement (ces trois regards restent dans tous les modes : la qualité visuelle prime l'économie) ; 2. pas de second tour d'audit ; 3. vérification web limitée aux chiffres de poids A, décidée dès l'arrêt B (la phase 3 est finie avant le premier arrêt C).
+- **Au-dessus de 70 %** : allège la suite dans cet ordre, en t'arrêtant dès que c'est suffisant, et dis-le en une ligne : 1. phase 8 avec le destinataire, le décideur et le directeur artistique seulement (ces trois regards restent dans tous les modes : la qualité visuelle prime l'économie) ; 2. pas de second tour d'audit ; 3. vérification web limitée aux chiffres de poids A, décidée dès l'arrêt B (la phase 3 est finie avant le premier arrêt C).
 - **Au-dessus de 90 %** : l'arrêt D.
 
 ## Surveiller l'usage, et conseiller
@@ -62,7 +62,7 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 
 ## La mémoire du projet : `travail/ETAT.md`
 
-**[RÈGLE PI.20]** 40 lignes au plus, rubriques fixes : PHASE et TYPE (création, refonte complète, refonte ciblée) ; MODE ; `LANGUE DU LIVRABLE : <langue>` (relevée dans `00_materiel.md`, français par défaut : tout ce qui s'imprime dans le livrable est dans cette langue, `phase-4-ecriture.md`) ; PYTHON (chemin du lanceur) ; `ATELIER : <chemin absolu>` (racine de l'atelier) ; DISCUSSION (titre et groupe) ; USAGE (à chaque relevé) ; `PAGES WEB LUES : n / plafond` (à jour à chaque retour du vérificateur) ; DÉCISIONS DU GROUPE (mot pour mot, 6 lignes au plus) ; FICHIERS (seulement ceux dont le statut n'est pas `FIN: OK`) ; ORDRES EN COURS (agent, identifiant rendu par l'outil, fichier attendu) ; MISSIONS DEPUIS LE DERNIER COMPACTAGE et MISSIONS TOTAL (des nombres) ; PASSES (compteurs de boucle) ; TEMPS (début et fin de chaque phase, relevés avec la commande `date`, jamais estimés) ; RESTE (défauts acceptés) ; PROCHAIN GESTE (une phrase exacte).
+**[RÈGLE PI.20]** 40 lignes au plus, rubriques fixes : PHASE et TYPE (création, refonte complète, refonte ciblée) ; MODE ; `LANGUE DU LIVRABLE : <langue>` (relevée dans `00_materiel.md`, français par défaut : tout ce qui s'imprime dans le livrable est dans cette langue, `phase-4-ecriture.md`) ; PYTHON (chemin du lanceur) ; `ATELIER : <chemin absolu>` (racine de l'atelier) ; DISCUSSION (titre et groupe) ; USAGE (à chaque relevé) ; `PAGES WEB LUES : n / plafond` (à jour à chaque retour du vérificateur) ; DÉCISIONS DE LA PERSONNE (mot pour mot, 6 lignes au plus) ; FICHIERS (seulement ceux dont le statut n'est pas `FIN: OK`) ; ORDRES EN COURS (agent, identifiant rendu par l'outil, fichier attendu) ; MISSIONS DEPUIS LE DERNIER COMPACTAGE et MISSIONS TOTAL (des nombres) ; PASSES (compteurs de boucle) ; TEMPS (début et fin de chaque phase, relevés avec la commande `date`, jamais estimés) ; RESTE (défauts acceptés) ; PROCHAIN GESTE (une phrase exacte).
 
 **[RÈGLE PI.21]** Mets-le à jour **avant** de lancer un agent, **après** chaque fin de phase et **après chaque fichier livrable produit** (build, PDF, PPTX, Word).
 
@@ -70,13 +70,13 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 
 **[RÈGLE PI.23]** Le `CLAUDE.md` importe le noyau, `profil.md` et `ETAT_COURANT.md` : ils reviennent après un `/compact`, un `/clear` ou une reprise ; une discussion de projet retrouve son sous-dossier par son résumé de compactage.
 
-## Économie : le groupe a un forfait Pro
+## Économie : la personne a un forfait Pro
 
 **[RÈGLE PI.24]** **C'est le seul endroit des règles d'usage ; elles valent pour tous les modes** (seuils et conseils ci-dessus).
 
-**[RÈGLE PI.25]** **L'Express est le défaut sur un forfait Pro.** Le Standard ne vient que si les jauges sont basses (usage sous 60 %) et que le temps du groupe le permet (2 h 30 ou plus), selon la table de l'étape D. L'Approfondi suit la même règle, avec ses seuils.
+**[RÈGLE PI.25]** **L'Express est le défaut sur un forfait Pro.** Le Standard ne vient que si les jauges sont basses (usage sous 60 %) et que le temps de la personne le permet (2 h 30 ou plus), selon la table de l'étape D. L'Approfondi suit la même règle, avec ses seuils.
 
-**[IMPÉRATIF PI.26]** **L'Express coupe le temps et les fichiers, jamais la qualité.** Il garde la vérification des chiffres décisifs, la planche regardée, le professeur, le client, le directeur artistique sur la planche et tous les contrôles par script ; l'économie vient des fichiers intermédiaires, des rendus refaits pour rien et des relectures de gros fichiers. Il ne retire jamais : la grille, « rien d'inventé », les calculs par script, le contrôle des débordements, `humanizer` et la liste anti-tics de la phase 4.
+**[IMPÉRATIF PI.26]** **L'Express coupe le temps et les fichiers, jamais la qualité.** Il garde la vérification des chiffres décisifs, la planche regardée, le destinataire, le décideur, le directeur artistique sur la planche et tous les contrôles par script ; l'économie vient des fichiers intermédiaires, des rendus refaits pour rien et des relectures de gros fichiers. Il ne retire jamais : les critères de jugement, « rien d'inventé », les calculs par script, le contrôle des débordements, `humanizer` et la liste anti-tics de la phase 4.
 
 **[RÈGLE PI.27]** **Le chef lit le minimum.** Jamais un gros fichier : seulement `00_materiel.md`, les sorties de script, les statuts, les planches de miniatures, les sections tirées au sort par la porte, et les fichiers courts qu'il signe (`principes.md`, « La posture du chef »).
 
@@ -98,7 +98,7 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 
 **[RÈGLE PI.36]** **Les skills lourdes** (`impeccable`, `pptx`, `frontend-slides`, `ui-ux-pro-max`, `marketing-skills`) se chargent dans l'agent qui s'en sert, jamais dans ton contexte.
 
-**[RÈGLE PI.37]** `marketing-skills` : `diapo-expert` et `diapo-redacteur`, quand la matière touche au marketing, à la stratégie ou au commercial. Ils chargent la ou les deux méthodes utiles (`marketing-plan`, `pricing`, `competitor-profiling`, `customer-research`, `product-marketing`, `launch`) comme grille de rigueur, jamais comme source de chiffres. Les outils du cours passent avant elles.
+**[RÈGLE PI.37]** `marketing-skills` : `diapo-expert` et `diapo-redacteur`, quand le domaine touche au marketing, à la stratégie ou au commercial. Ils chargent la ou les deux méthodes utiles (`marketing-plan`, `pricing`, `competitor-profiling`, `customer-research`, `product-marketing`, `launch`) comme grille de rigueur, jamais comme source de chiffres. Les outils de la référence passent avant elles.
 
 **[RÈGLE PI.38]** `ui-ux-pro-max` : `diapo-fabricant`, en phase 5, comme catalogue de plus pour les palettes, les accords de polices et les types de graphiques. Il ne passe jamais avant le sujet, la marque, le goût et « beau d'abord ».
 
@@ -115,7 +115,7 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 | 5 | Pas de planche des directions : l'énergie choisie à l'étape C en tient lieu, le reste de la direction se choisit par raisonnement (« Anti-générique »). 5 gabarits au plus, 2 familles de polices. |
 | 6 | PDF seulement, plus le PPTX si les consignes l'exigent. |
 | 7 | Contrôles par script et test écran, dans le plafond de rendus. Une planche de contrôle est permise juste après le premier PDF, en plus de celle d'après les corrections. |
-| 8 | Le professeur et le client, plus le directeur artistique en un seul temps (le regard neuf sur la planche, sans `05_charte.md`). |
+| 8 | Le destinataire et le décideur, plus le directeur artistique en un seul temps (le regard neuf sur la planche, sans `05_charte.md`). |
 | 9 | Liste de contrôle complète. |
 
 **[RÈGLE PI.40]** **Fichiers de l'Express** : six, `ETAT.md`, `01_cadrage.md` (avec les titres, la contre-expertise et tes réponses aux objections), `02_contenu.yaml`, `03_verification.md`, `build.py` et le livrable. `build.py` porte aussi la charte (thèse éditoriale et tableau des rôles en commentaire de tête, jetons, gabarits) et les contrôles de la phase 7, en fonctions : en Express, « `05_charte.md` », « `tokens.css` » et « `gabarits.css` » désignent ce commentaire et ces fonctions. Pas de `controles.py` ni de `fiche_maitrise.md` à part : la fiche est la dernière section de `03_verification.md`, ta revue hostile (`revue_chef.md`, toujours écrite) une section de `01_cadrage.md`.

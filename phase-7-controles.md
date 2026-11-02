@@ -50,6 +50,6 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, pour écrire `controles.py
 
 **[RÈGLE P7.20]** **Rythme**, par script, sur les gabarits de `02_contenu.yaml` : au moins 4 gabarits différents, ruptures à la bonne cadence.
 
-**[RÈGLE P7.21]** Les autres lectures se font en phase 8 : la réponse d'abord et les titres seuls (tests 1 et 2) par le professeur ; le noir et blanc et la personnalité par le directeur artistique.
+**[RÈGLE P7.21]** Les autres lectures se font en phase 8 : la réponse d'abord et les titres seuls (tests 1 et 2) par le destinataire ; le noir et blanc et la personnalité par le directeur artistique.
 
 **[RÈGLE P7.22]** **Dépôt**, par script : poids sous la limite de la plateforme, fichier qui s'ouvre, polices incorporées (`pdffonts`). Ensuite, **arrêt C**.
