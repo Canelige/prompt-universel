@@ -1,8 +1,10 @@
-Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directions (fin de la phase 1) puis pour la charte (phase 5) et pour écrire `controles.py` ; la discussion de projet, seulement la « Partie du chef », à la fin de la phase 1, avant les tirages ; l'auditeur « direction artistique » par `interdits.txt`, extrait par script de « Ce qui trahit l'IA ».
+Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directions (fin de la phase 1) puis pour la charte (phase 5) et pour écrire `controles.py` ; la discussion de projet, seulement la « Partie du chef », du titre `# Partie du chef` au titre `# Partie du fabricant` exclu (`grep -n "^#" universel/direction-artistique.md`), plus `annexe-palettes.md` et `annexe-polices.md` pour les tirages, à la fin de la phase 1 ; l'auditeur « direction artistique » par `interdits.txt`, extrait par script de « Ce qui trahit l'IA ».
 
 # Phase 5 · Direction artistique (`diapo-fabricant`, ordre de mission par le chef)
 
 **[RÈGLE DA.1]** L'agent lit directement `reference/craft-floor.md` de la skill `impeccable` et la seule section « Commit the world » de `reference/new-work.md` (`grep -n '^## '`), sans lancer le flux complet de la skill ; `apple-design` n'est chargée que pour un HTML animé.
+
+**[IMPÉRATIF DA.1b]** **Préséance : ce module l'emporte sur `craft-floor.md` d'`impeccable`.** Là où ils divergent (étiquette d'étape au-dessus du titre, chiffre géant de couverture, rangée de tuiles en Vivant), ce module tranche ; `craft-floor.md` ne sert que pour ce que ce module ne dit pas.
 
 **[RÈGLE DA.2]** Il écrit `travail/05_charte.md`, `travail/tokens.css` et `travail/gabarits.css`, puis ajoute le champ `gabarit` à chaque page de `02_contenu.yaml`.
 
@@ -24,9 +26,9 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 ## Le sujet donne le ton
 
-**[IMPÉRATIF DA.9]** **Quand le sujet a une identité, elle donne le ton avant tout tirage.** Priorité 1, **marque ou entreprise réelle** (étudiée, cliente du cas, ou l'entreprise de la personne) : logo officiel et couleurs de marque, pris sur son site, son kit presse ou sa charte publique (Wikimedia Commons a souvent le logo), avec crédit. Sa palette devient le tableau des rôles (« La couleur », point 12). Logo sur la couverture et, en petit, dans l'en-tête de chaque page ; jamais déformé, recoloré ni redessiné.
+**[IMPÉRATIF DA.9]** **Quand le sujet a une identité, elle donne le ton avant tout tirage.** Priorité 1, **marque ou entreprise réelle** (étudiée, cliente du cas, ou l'entreprise de la personne) : logo officiel et couleurs de marque, pris sur son site, son kit presse ou sa charte publique (Wikimedia Commons a souvent le logo), avec crédit. Sa palette devient le tableau des rôles (« La couleur », point 12). La marque du client va sur la couverture et dans le bandeau, en petit, jamais ailleurs ; logo jamais déformé, recoloré ni redessiné. L'axe 2 tiré décide du reste.
 
-**[RÈGLE DA.10]** **La voix de la marque se reprend partout** : signature graphique (bandeau, motif, coins arrondis) sur chaque page, rayon d'angle de la marque = rayon unique de la charte, typographie de la marque (ou équivalente libre) pour les titres à la place du tirage de l'axe 2 ; la marque vaut justification pour une police-réflexe.
+**[RÈGLE DA.10]** **La voix de la marque se reprend partout** : signature graphique (bandeau, motif, coins arrondis) sur chaque page, rayon d'angle de la marque = rayon unique de la charte. La typographie vient de l'axe 2 tiré, jamais de celle de la marque, pour qu'un livrable sur une marque ne se lise pas comme un document de la marque.
 
 **[RÈGLE DA.11]** **Contrôle** (phase 8, directeur artistique et décideur) : le logo masqué, la page doit encore se reconnaître comme celle de la marque.
 
@@ -42,7 +44,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[RÈGLE DA.17]** Contrastes obligatoires : une couleur de marque trop claire pour du texte sert aux aplats, sa version foncée au texte.
 
-**[RÈGLE DA.18]** Le tirage ne décide que de ce que l'identité laisse libre : polices (dans le respect de la marque), grille, couverture, graphiques.
+**[RÈGLE DA.18]** Le tirage ne décide que de ce que l'identité laisse libre : polices (axe 2), grille, couverture, graphiques.
 
 ## Anti-générique : chaque personne a un style à elle
 
@@ -77,7 +79,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 | 3 | Couverture | typographique avec grand blanc ; aplat sur 60 % avec titre en négatif ; image ou carte plein cadre ; chiffre géant ; reproduction d'un document du cas |
 | 4 | Grille | 12 colonnes ; colonne pleine hauteur qui porte le titre ; asymétrique un tiers, deux tiers ; modulaire |
 | 5 | Graphiques | filets fins et une barre d'accent ; barres épaisses et très grands chiffres ; points et lignes lumineux sur fond sombre |
-| 6 | Images | rares et en noir et blanc ; duotone encre et accent ; couleur naturelle, plein cadre ; aucune (schémas seulement) |
+| 6 | Images (3 au moins, toujours : DA.94) | noir et blanc ; duotone encre et accent ; couleur naturelle, plein cadre ; vignettes cadrées dans la grille |
 | 7 | Repère de navigation | numéro de page seul en pied ; frise des parties en pied, avec la partie courante en accent ; titre courant vertical dans la marge ; une teinte de l'accent par partie |
 | 8 | Titre de page | sous un filet, en haut à gauche ; dans la colonne de gauche ; au-dessus du graphique, aligné sur lui ; en capitales dans la marge |
 | 9 | Tableaux | filets horizontaux seuls ; ligne de tête en aplat d'accent ; bandes alternées claires ; total en gras et colonne de chiffres à droite |
@@ -86,7 +88,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[RÈGLE DA.31]** Axe 5 « lumineux sur fond sombre » : exige l'axe 1 Sombre et une structure dont le fond a une luminosité inférieure à 0,35 (`annexe-palettes.md` : 3, 4, 6, 15, 21, 26, 30, 39) ; « lumineux » = clair et saturé, jamais un halo.
 
-**[RÈGLE DA.32]** Axe 6 « aucune image » exclut l'axe 3 « image plein cadre » ; axe 3 « document du cas » exige un document fourni par le cas.
+**[RÈGLE DA.32]** Axe 6 « vignettes cadrées » exclut l'axe 3 « image plein cadre » ; axe 3 « document du cas » exige un document fourni par le cas.
 
 **[RÈGLE DA.33]** A4 destiné à l'impression : Sobre, Vivant ou Affiche, sans « lumineux sur fond sombre » ; fond sombre (luminosité inférieure à 0,35) en pleine page interdit ; Sombre ne s'applique pas à un A4.
 
@@ -276,9 +278,9 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[CONSEIL DA.93]** Légère texture de grain sur les grands aplats, contre l'effet gabarit.
 
-**[RÈGLE DA.94]** **De vraies images, choisies** : preuve ou repère, jamais décor ; au sujet, récentes si possible ; pour comparer des options, un diptyque de même hauteur et de même format. Sinon, pas de photo : un schéma, une carte ou un graphique la remplace. Quand elles existent, 3 images pertinentes dans un diaporama de 8 pages et plus (lieux, produits, documents du cas, personnes au travail), dont une sur la couverture si la direction le permet. Un livrable fait seulement de tableaux : défaut MOYEN pour le directeur artistique.
+**[IMPÉRATIF DA.94]** **Au moins 3 vraies images pertinentes dans tout livrable**, sauf consigne contraire : libres de droits et sourcées (Unsplash, Pexels, Wikimedia Commons, ou site officiel de la marque, cité) ; preuve ou repère, jamais décor (lieux, produits, documents du cas, personnes au travail), dont une sur la couverture si la direction le permet ; au sujet, récentes si possible ; pour comparer des options, un diptyque de même hauteur et de même format. Zéro image : défaut GRAVE pour le directeur artistique ; un livrable fait surtout de tableaux : MOYEN. **Une page à grand blanc** reçoit une image ou un visuel (schéma, carte, chiffre en grand), jamais du texte étiré (`phase-6-fabrication.md`, P6.21).
 
-**[RÈGLE DA.95]** **Sources**, téléchargées par script Python : fichiers fournis par la personne ; Wikimedia Commons, API sans clé (`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&prop=imageinfo&iiprop=url|extmetadata&format=json`), qui donne l'auteur et la licence, avec une pause d'une seconde entre deux requêtes (sinon erreur 429) ; visuels officiels de produit d'une marque réelle, pris sur son site, crédit « © marque » ; Natural Earth pour les cartes (`https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip`), dessinées en SVG ; Unsplash et Pexels, seulement si la personne fournit l'image ; une seule famille de pictogrammes (Lucide ou Phosphor), pour une catégorie qui revient.
+**[RÈGLE DA.95]** **Sources**, téléchargées par script Python : fichiers fournis par la personne ; Wikimedia Commons, API sans clé (`https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&prop=imageinfo&iiprop=url|extmetadata&format=json`), qui donne l'auteur et la licence, avec une pause d'une seconde entre deux requêtes (sinon erreur 429) ; visuels officiels de produit d'une marque réelle, pris sur son site, crédit « © marque » ; Natural Earth pour les cartes (`https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip`), dessinées en SVG ; Unsplash et Pexels (licence libre), avec l'auteur et l'adresse de la page de la photo ; une seule famille de pictogrammes (Lucide ou Phosphor), pour une catégorie qui revient.
 
 **[RÈGLE DA.96]** **Crédit** dans `travail/credits.md`, et sous l'image.
 

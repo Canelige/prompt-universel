@@ -72,7 +72,7 @@ Qui le lit, et quand : la discussion de projet, en phase 8, pour préparer `audi
 
 ## Chef : qui audite selon le mode
 
-**[IMPÉRATIF P8.26]** **Les trois regards, dans tous les modes** : le destinataire, le directeur artistique et le décideur. Express : ces trois, le directeur artistique en un seul temps (le regard neuf) ; l'expert de la phase 1 reste obligatoire, celui de la phase 8 est sauté. Standard : destinataire, vérificateur, directeur artistique, expert de la branche et décideur, plus le contradicteur si les consignes font jouer un jury. Approfondi : les six.
+**[IMPÉRATIF P8.26]** **Les trois regards, dans tous les modes** : le destinataire, le directeur artistique et le décideur. Express : ces trois, le directeur artistique en un seul temps (le regard neuf) ; l'expert de la phase 1 reste obligatoire, celui de la phase 8 est sauté. Approfondi : les six.
 
 ## Chef : arbitrage
 

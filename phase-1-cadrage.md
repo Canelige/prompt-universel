@@ -78,4 +78,4 @@ Qui le lit, et quand : la discussion de projet, après l'étape E, pour toute la
 
 ## Ensuite
 
-**[RÈGLE P1.28]** 1. Écris `travail/portes.py`, avec les contrôles de la phase 1 (`pilotage.md`, « La porte ») ; 2. lis la « Partie du chef » de `direction-artistique.md`, puis fais les tirages dans l'énergie choisie à l'étape C : 3 directions en Standard et en Approfondi (lance ensuite `diapo-fabricant` pour la planche), une seule en Express (« Anti-générique ») ; 3. passe à l'arrêt B (`pilotage.md`).
+**[RÈGLE P1.28]** 1. Écris `travail/portes.py`, avec les contrôles de la phase 1 (`pilotage.md`, « La porte ») ; 2. lis la « Partie du chef » de `direction-artistique.md`, puis fais les tirages dans l'énergie choisie à l'étape C : 3 directions en Approfondi (lance ensuite `diapo-fabricant` pour la planche), une seule en Express (« Anti-générique ») ; 3. passe à l'arrêt B (`pilotage.md`).

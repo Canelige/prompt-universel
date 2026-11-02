@@ -37,7 +37,7 @@ Qui le lit, et quand : `diapo-verificateur`, avec `principes.md`, en phase 1 (ch
 
 **[RÈGLE P3.14]** **Page lue** : page ouverte avec succès. Les échecs (403, 404, page illisible) ne comptent pas, dans la limite de 2 fois le plafond en tentatives ; les recherches non plus. Les données lues par script, API ou CSV (Banque mondiale, OCDE, Eurostat…) ne comptent pas non plus : pour un tableau de chiffres, passe par là, car WebFetch n'en rend qu'un résumé.
 
-**[RÈGLE P3.15]** **Plafond de pages lues** : 6 en Express, 20 en Standard, 40 en Approfondi, en priorité pour les lignes A ; le compte (pages web seulement) est dans la ligne `PAGES WEB LUES` de `ETAT.md`. **Les pages de tarifs d'une proposition (budget de la phase 2) comptent à part : 4 au plus.**
+**[RÈGLE P3.15]** **Plafond de pages lues** : 10 en Express, 40 en Approfondi, en priorité pour les lignes A ; le compte (pages web seulement) est dans la ligne `PAGES WEB LUES` de `ETAT.md`. **Les pages de tarifs d'une proposition (budget de la phase 2) comptent à part : 4 au plus.**
 
 ## Les verdicts
 

@@ -12,9 +12,9 @@ Qui le lit, et quand : la discussion de projet, quand `ETAT.md` porte `TYPE : re
 
 **[IMPÉRATIF RF.5]** **Garder la substance** : faits justes, décisions de la personne, analyses demandées et ordre imposé restent ; le faux est corrigé et signalé, ce qui manque aux critères ajouté et signalé. Réponse « forme seulement » : le fond ne change que pour corriger une erreur.
 
-**[RÈGLE RF.6]** **Refonte complète** (Standard, Approfondi) : toutes les phases ; format de sortie par défaut celui de l'original (PPTX d'origine : un PPTX modifiable et un PDF).
+**[RÈGLE RF.6]** **Refonte complète** (2 h 30 ou plus, en Express comme en Approfondi) : toutes les phases ; format de sortie par défaut celui de l'original (PPTX d'origine : un PPTX modifiable et un PDF).
 
-**[RÈGLE RF.7]** **Refonte ciblée** (Express, ou moins de 2 h 30) : édition en place. Livrable : copie du PPTX d'origine dans `<sous-dossier>/livraison/` ; la skill `pptx` la déballe, on modifie les 5 pages les plus faibles d'après les commentaires et celles qui couvrent les critères manquants, on la remballe. Les autres pages ne bougent pas.
+**[RÈGLE RF.7]** **Refonte ciblée** (moins de 2 h 30) : édition en place. Livrable : copie du PPTX d'origine dans `<sous-dossier>/livraison/` ; la skill `pptx` la déballe, on modifie les 5 pages les plus faibles d'après les commentaires et celles qui couvrent les critères manquants, on la remballe. Les autres pages ne bougent pas.
 
 **[RÈGLE RF.8]** Charte de l'original gardée ; pas de graine, pas de directions, pas d'arrêt B, pas de `build.py`. On corrige ce que les commentaires reprochent (lisibilité, contraste, hiérarchie, titres, chiffres). Texte modifié : phase 4 ; contrôle final de la phase 9 sur tout le fichier, pages non modifiées comprises.
 

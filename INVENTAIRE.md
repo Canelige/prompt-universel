@@ -6,9 +6,11 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 
 **Contrôle.** Toutes les lignes porteuses de la source (hors titres, lignes vides, séparateurs de tableau et clôtures de code) sont rattachées à une règle, à un doublon noté ou au cadre de l'étudiant : 0 ligne orpheline, vérifié par script le 2 novembre 2026.
 
-**Totaux.** 517 règles venues de la source, 2 doublons exacts supprimés, 30 règles nouvelles (noyau et ajouts de l'auteur). Niveaux, sur les 547 règles balisées : 139 IMPÉRATIF, 394 RÈGLE, 14 CONSEIL (règles de la source seules : 117 IMPÉRATIF, 386 RÈGLE, 14 CONSEIL). Le corps commun des agents, recopié dans les 7 fichiers de `agents/`, compte une fois.
+**Totaux.** 517 règles venues de la source, 2 doublons exacts supprimés, 34 règles nouvelles (noyau, ajouts de l'auteur, essai à blanc n°4). Niveaux, sur les 551 règles balisées : 146 IMPÉRATIF, 391 RÈGLE, 14 CONSEIL (règles de la source seules : 119 IMPÉRATIF, 384 RÈGLE, 14 CONSEIL, après le passage de DA.94 et PI.31 en IMPÉRATIF). Le corps commun des agents, recopié dans les 7 fichiers de `agents/`, compte une fois.
 
 **Universalisation (2 novembre 2026).** Le prompt sert l'école, le travail et la vie perso ; aucune règle n'est retirée, aucun niveau ne change. Vocabulaire : l'étudiant devient la personne, le groupe devient la personne, le rendu d'école devient le livrable, le dossier `Ecole` devient `Atelier`. Le professeur qui juge devient **le destinataire** (professeur, client, manager, jury) ; la grille devient **les critères de jugement** (la grille s'il y en a une, sinon les attentes du destinataire, déduites ou demandées) ; le cours devient **la référence** (cours, méthode ou modèle de l'entreprise ou du client) ; la matière devient **le domaine**. Règles renommées : N1 « Les consignes du destinataire d'abord » (ex « L'école d'abord ») ; N4 « Les critères de jugement décident » (ex « La grille décide ») ; N12 « La sécurité de la personne et la confidentialité » ; P1.2 « Les critères de jugement » et CRITÈRES PRÉSUMÉS (ex GRILLE PRÉSUMÉE) ; P1.8 « Sans référence » (ex « Sans cours ») ; P1.13 et P1.17 « Le profil du domaine » ; P1.14 « La règle sur l'IA » ; PR.12 « Les critères décident » ; PR.25 « La référence maîtrisée, puis dépassée » ; P2.27 « La voix de la personne » ; P8.7 et P8.23 « Le décideur » (ex « Le client ») ; P8.13 « Le destinataire » (ex « Le professeur »). Angles d'audit : `professeur` devient `destinataire`, `client` devient `decideur` ; fichiers d'audit : `criteres_originaux.txt`, `criteres_presumes.txt`, `reference_plan.txt`. Règles ajoutées : PR.1b (les mots des modules), PR.42 (la confidentialité au travail), AG.10 (confidentialité des agents) ; NO.6b, ajoutée juste avant, est inventoriée ici. Les colonnes « Règle (début) » sont recalculées par script sur les fichiers modifiés.
+
+**Essai à blanc n°4 (2 novembre 2026).** Corrections tirées de son journal, sans règle retirée. Premier contact : NO.2 porte la liste ordonnée des six questions (prénom, nom du chef, usages, puis le reste de DE.2) et suffit seule ; DE.2 suit le même ordre ; NO.3 admet une relance de 1 ou 2 lignes. Modes : deux seulement, Express et Approfondi (le Standard disparaît de DE.21, DE.23, DE.24, P1.28, P2.6, P3.15, P4.3, P4.17, PR.20, P8.26, RF.6, RF.7, PI.25) ; N9 les définit dans le noyau ; sans usage lu, le temps seul décide et s'écrit dans `ETAT.md` ; avec plus de 6 h, l'Express n'est jamais le défaut. Direction artistique : la « Partie du chef » se trouve par `grep -n "^#"` (NO.8), s'arrête à « Partie du fabricant », et la ligne de la phase 5 du noyau nomme les deux annexes ; DA.1b donne la préséance sur `craft-floor.md` d'`impeccable` ; la marque va sur la couverture et le bandeau, l'axe 2 tiré décide de la typographie (DA.9, DA.10, DA.18, P7.13). Prix (P2.10) : le tarif propre de l'agence ou de la personne entre comme HYPOTHÈSE justifiée, seuls les faits extérieurs exigent une source. Images : DA.94 devient IMPÉRATIF (3 vraies images au moins, libres de droits et sourcées), P6.21 l'impose à la fabrication avec le contrôle des pages à grand blanc ; l'axe 6 perd « aucune » (DA.29, DA.32) ; Unsplash et Pexels sont permis (DA.95). Rendus : PI.31 devient IMPÉRATIF avec le compteur `RENDUS COMPLETS : n / 3` de `ETAT.md` (PI.20), tenu par `build.py`, et P6.2 donne la recette de `--pages` (`page_ranges`). Les lignes NO.1b et NO.1c, ajoutées après la fin du tableau, sont rangées dans « Règles nouvelles ».
 
 ## Règles venues de la source
 
@@ -60,7 +62,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | DE.20 | IMPÉRATIF | `demarrage.md` | L111-116 | L'énergie visuelle se demande toujours, avant toute création (sauf refonte ciblée ou charte imposée). Le Sobre … |
 | DE.21 | RÈGLE | `demarrage.md` | L118 | Sans réponse, tu prends ta recommandation et tu le dis. Le choix s'écrit dans ETAT.md (DÉCISIONS … |
 | DE.22 | RÈGLE | `demarrage.md` | L120 | Ce qui manque encore (noms, date, nombre d'orateurs) : pas de question ; défaut raisonnable, ou … |
-| DE.23 | RÈGLE | `demarrage.md` | L124 | La personne te donne l'usage déjà consommé ; prends la jauge la plus remplie. Mode retenu … |
+| DE.23 | RÈGLE | `demarrage.md` | L124 | La personne te donne l'usage déjà consommé ; prends la jauge la plus remplie. Deux modes … |
 | DE.24 | RÈGLE | `demarrage.md` | L126-130 |  |
 | DE.25 | CONSEIL | `demarrage.md` | L132 | Durées et seuils sont des estimations. L'historique de profil.md donne l'usage réellement consommé par un travail … |
 | DE.26 | RÈGLE | `demarrage.md` | L132 | Après la phase 1, la discussion de projet compare la présence prévue, d'après les temps notés … |
@@ -94,13 +96,13 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | PI.22 | RÈGLE | `pilotage.md` | L203 | Scripts et agents écrivent par chemin absolu : chaque commande du shell commence par cd <ATELIER> … |
 | PI.23 | RÈGLE | `pilotage.md` | L203 | Le CLAUDE.md importe le noyau, profil.md et ETAT_COURANT.md : ils reviennent après un /compact, un /clear … |
 | PI.24 | RÈGLE | `pilotage.md` | L207 | C'est le seul endroit des règles d'usage ; elles valent pour tous les modes (seuils et … |
-| PI.25 | RÈGLE | `pilotage.md` | L208 | L'Express est le défaut sur un forfait Pro. Le Standard ne vient que si les jauges … |
+| PI.25 | RÈGLE | `pilotage.md` | L208 | Deux modes, Express et Approfondi (table de l'étape D). Approfondi : plus de 6 h et … |
 | PI.26 | IMPÉRATIF | `pilotage.md` | L209 | L'Express coupe le temps et les fichiers, jamais la qualité. Il garde la vérification des chiffres … |
 | PI.27 | RÈGLE | `pilotage.md` | L210 | Le chef lit le minimum. Jamais un gros fichier : seulement 00_materiel.md, les sorties de script, … |
 | PI.28 | RÈGLE | `pilotage.md` | L211 | Le chef reste en Opus, quel que soit l'usage : il pense, répartit, vérifie, tranche (seule … |
 | PI.29 | RÈGLE | `pilotage.md` | L212 | Les agents font le volume : diapo-* en Sonnet, sauf diapo-lecteur (Haiku) et diapo-expert (le modèle … |
 | PI.30 | RÈGLE | `pilotage.md` | L213 | Le travail mécanique passe à Haiku (diapo-lecteur) : copies, relevés, tests de lecture. Ce qu'un script … |
-| PI.31 | RÈGLE | `pilotage.md` | L214 | 3 rendus complets du livrable au plus, premier rendu et corrections de l'audit compris ; ensuite, … |
+| PI.31 | IMPÉRATIF | `pilotage.md` | L214 | 3 rendus complets du livrable au plus, premier rendu et corrections de l'audit compris, comptés dans … |
 | PI.32 | RÈGLE | `pilotage.md` | L215 | Avant de lancer un rendu, annonce l'usage que tu estimes (en % de session et de … |
 | PI.33 | CONSEIL | `pilotage.md` | L216 | Coût mesuré d'un rendu Express : [à mesurer] |
 | PI.34 | RÈGLE | `pilotage.md` | L217 | Une longue conversation coûte à chaque reprise (tout le contexte est relu en Opus) : dès … |
@@ -162,8 +164,8 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | RF.3 | IMPÉRATIF | `refonte.md` | L312 | Un rendu LibreOffice n'a pas les polices d'origine : jamais de débordement de l'ancien travail signalé … |
 | RF.4 | RÈGLE | `refonte.md` | L313 | Diagnostic, après la phase 1 : l'auditeur « destinataire » note l'ancien travail. |
 | RF.5 | IMPÉRATIF | `refonte.md` | L314 | Garder la substance : faits justes, décisions de la personne, analyses demandées et ordre imposé restent … |
-| RF.6 | RÈGLE | `refonte.md` | L315 | Refonte complète (Standard, Approfondi) : toutes les phases ; format de sortie par défaut celui de … |
-| RF.7 | RÈGLE | `refonte.md` | L316-317 | Refonte ciblée (Express, ou moins de 2 h 30) : édition en place. Livrable : copie … |
+| RF.6 | RÈGLE | `refonte.md` | L315 | Refonte complète (2 h 30 ou plus, en Express comme en Approfondi) : toutes les phases … |
+| RF.7 | RÈGLE | `refonte.md` | L316-317 | Refonte ciblée (moins de 2 h 30) : édition en place. Livrable : copie du PPTX … |
 | RF.8 | RÈGLE | `refonte.md` | L318 | Charte de l'original gardée ; pas de graine, pas de directions, pas d'arrêt B, pas de … |
 | RF.10 | IMPÉRATIF | `refonte.md` | L319 | Audit d'une refonte ciblée : le destinataire, le décideur et le directeur artistique sur les pages … |
 | RF.9 | IMPÉRATIF | `refonte.md` | L319 | Contrôle : soffice convertit la copie en PDF, PyMuPDF tire les PNG des seules pages modifiées … |
@@ -206,7 +208,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | P2.7 | RÈGLE | `phase-2-contenu.md` | L401 | Sous quel nom : chaque pièce prend le nom et la forme que lui donne le … |
 | P2.8 | IMPÉRATIF | `phase-2-contenu.md` | L402 | Obligatoires partout : l'objection la plus forte, et une recommandation exécutable. |
 | P2.9 | RÈGLE | `phase-2-contenu.md` | L403 | Proposition ou appel d'offres : un tableau de plus (méthode, échantillon, critère nourri, décision, gate), et … |
-| P2.10 | RÈGLE | `phase-2-contenu.md` | L404 | Budget : chaque ligne porte sa base et un prix unitaire sourcé et daté (tarif, liste … |
+| P2.10 | RÈGLE | `phase-2-contenu.md` | L404 | Budget : chaque ligne porte sa base et son prix unitaire. Les faits extérieurs (prix d'un … |
 | P2.11 | RÈGLE | `phase-2-contenu.md` | L405 | Conviction : 6 à 8 hypothèses au registre, chacune liée à un critère de jugement et … |
 | P2.12 | RÈGLE | `phase-2-contenu.md` | L406 | Objet de l'étude, si le livrable en propose une : blocs du questionnaire ou du guide, … |
 | P2.13 | RÈGLE | `phase-2-contenu.md` | L407 | Prioriser : Top 3, classement, « le plus critique est… ». On ne fait pas d'inventaire. |
@@ -239,7 +241,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | P3.12 | IMPÉRATIF | `phase-3-faits.md` | L450 | Extrait recopié, pas résumé : la consigne passée à WebFetch demande la phrase exacte qui contient … |
 | P3.13 | IMPÉRATIF | `phase-3-faits.md` | L452 | Texte juridique : Légifrance, Judilibre ou EUR-Lex, version en vigueur à la date des faits ; … |
 | P3.14 | RÈGLE | `phase-3-faits.md` | L454 | Page lue : page ouverte avec succès. Les échecs (403, 404, page illisible) ne comptent pas, … |
-| P3.15 | RÈGLE | `phase-3-faits.md` | L456 | Plafond de pages lues : 6 en Express, 20 en Standard, 40 en Approfondi, en priorité … |
+| P3.15 | RÈGLE | `phase-3-faits.md` | L456 | Plafond de pages lues : 10 en Express, 40 en Approfondi, en priorité pour les lignes … |
 | P3.16 | IMPÉRATIF | `phase-3-faits.md` | L458-459 | EXTERNE : CONFIRMÉ (page ouverte, extrait présent) ; SOURCE UNIQUE (chiffre A non recoupé : utilisable, … |
 | P3.17 | RÈGLE | `phase-3-faits.md` | L460 | CAS : CONFORME AU CAS ; une source web plus récente qui le contredit ne le … |
 | P3.18 | RÈGLE | `phase-3-faits.md` | L461 | PRIMAIRE : CONFORME À LA COLLECTE. CALCUL : RECALCULÉ. HYPOTHÈSE et TÉMOIGNAGE : pas de verdict. |
@@ -267,7 +269,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | P4.14 | RÈGLE | `phase-4-ecriture.md` | L492 | Livrable en anglais : ce qui suit remplace les tics français du point 3 et la … |
 | P4.15 | RÈGLE | `phase-4-ecriture.md` | L493 | Ponctuation anglaise : pas d'espace avant :, ;, ?, ! ; guillemets “ ” et ‘ … |
 | P4.16 | IMPÉRATIF | `phase-4-ecriture.md` | L494 | Tiret long et demi-tiret interdits aussi en anglais : un intervalle s'écrit « from 60k to … |
-| P4.17 | RÈGLE | `phase-4-ecriture.md` | L495 | humanizer et stop-slop s'appliquent directement, sans l'adaptation du point 2 (stop-slop seulement en Standard et en … |
+| P4.17 | RÈGLE | `phase-4-ecriture.md` | L495 | humanizer et stop-slop s'appliquent directement, sans l'adaptation du point 2 (stop-slop seulement en Approfondi). |
 | P4.18 | IMPÉRATIF | `phase-4-ecriture.md` | L496 | Tics anglais, contrôlés par script, y compris au contrôle final de la phase 9 : delve, … |
 | P4.19 | RÈGLE | `phase-4-ecriture.md` | L496 | Le script contrôle les mots, pas les structures : la lecture attrape « not X but … |
 | DA.1 | RÈGLE | `direction-artistique.md` | L502 | L'agent lit directement reference/craft-floor.md de la skill impeccable et la seule section « Commit the world … |
@@ -287,7 +289,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | DA.15 | RÈGLE | `direction-artistique.md` | L520 | Entreprise fictive : logo créé pour le livrable, simple (logotype, monogramme ou pictogramme SVG dessiné par … |
 | DA.16 | RÈGLE | `direction-artistique.md` | L520 | Les couleurs de marque prennent le rôle de l'accent et de l'accent 2 parmi les 9 … |
 | DA.17 | RÈGLE | `direction-artistique.md` | L520 | Contrastes obligatoires : une couleur de marque trop claire pour du texte sert aux aplats, sa … |
-| DA.18 | RÈGLE | `direction-artistique.md` | L522 | Le tirage ne décide que de ce que l'identité laisse libre : polices (dans le respect … |
+| DA.18 | RÈGLE | `direction-artistique.md` | L522 | Le tirage ne décide que de ce que l'identité laisse libre : polices (axe 2), grille, … |
 | DA.19 | RÈGLE | `direction-artistique.md` | L526 | Les modules ne fixent aucune police, aucune couleur, aucune couverture : tout vient du sujet, du … |
 | DA.20 | RÈGLE | `direction-artistique.md` | L527 | L'identité éditoriale avant la couleur. En fin de phase 1, écris en tête de 05_charte.md : … |
 | DA.21 | RÈGLE | `direction-artistique.md` | L528 | Le goût prime sur le tirage : tire parmi les options compatibles avec le sujet et … |
@@ -301,7 +303,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | DA.29 | RÈGLE | `direction-artistique.md` | L539-549 |  |
 | DA.30 | RÈGLE | `direction-artistique.md` | L551 | Compatibilités : un tirage qui enfreint une ligne ci-dessous est refait avec l'étiquette suffixée /bis. |
 | DA.31 | RÈGLE | `direction-artistique.md` | L552 | Axe 5 « lumineux sur fond sombre » : exige l'axe 1 Sombre et une structure … |
-| DA.32 | RÈGLE | `direction-artistique.md` | L553 | Axe 6 « aucune image » exclut l'axe 3 « image plein cadre » ; axe … |
+| DA.32 | RÈGLE | `direction-artistique.md` | L553 | Axe 6 « vignettes cadrées » exclut l'axe 3 « image plein cadre » ; axe … |
 | DA.33 | RÈGLE | `direction-artistique.md` | L554 | A4 destiné à l'impression : Sobre, Vivant ou Affiche, sans « lumineux sur fond sombre » … |
 | DA.34 | RÈGLE | `direction-artistique.md` | L555 | Vivant et Affiche : couverture avec aplat d'au moins un quart de la page ; axe … |
 | DA.35 | RÈGLE | `direction-artistique.md` | L557 | Le nom de chaque direction : un objet du sujet ou un référent réel, jamais « … |
@@ -362,7 +364,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | DA.91 | RÈGLE | `direction-artistique.md` | L666 | Au moins 2 pages sur 3 portent un graphique, un schéma, une carte ou une image. |
 | DA.92 | RÈGLE | `direction-artistique.md` | L667 | La photo d'abord, la teinte ensuite : choisis d'abord, quand c'est possible, l'image de couverture (objet, … |
 | DA.93 | CONSEIL | `direction-artistique.md` | L667 | Légère texture de grain sur les grands aplats, contre l'effet gabarit. |
-| DA.94 | RÈGLE | `direction-artistique.md` | L668 | De vraies images, choisies : preuve ou repère, jamais décor ; au sujet, récentes si possible … |
+| DA.94 | IMPÉRATIF | `direction-artistique.md` | L668 | Au moins 3 vraies images pertinentes dans tout livrable, sauf consigne contraire : libres de droits … |
 | DA.95 | RÈGLE | `direction-artistique.md` | L669 | Sources, téléchargées par script Python : fichiers fournis par la personne ; Wikimedia Commons, API sans … |
 | DA.96 | RÈGLE | `direction-artistique.md` | L670 | Crédit dans travail/credits.md, et sous l'image. |
 | DA.97 | IMPÉRATIF | `direction-artistique.md` | L671 | Interdit : image générée imitant une photo ; photo de stock générique (poignée de main, ampoule, … |
@@ -400,7 +402,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | P7.10 | RÈGLE | `phase-7-controles.md` | L741 | Surface colorée (mesure du point 9 e) hors de la plage de l'énergie choisie, sur l'ensemble … |
 | P7.11 | RÈGLE | `phase-7-controles.md` | L742 | Plancher de couleur : page sous 3 % de surface colorée (sauf Sobre typographique choisi), ou … |
 | P7.12 | RÈGLE | `phase-7-controles.md` | L743 | Aplats, titres et couverture : bandeau de titre de plus de 10 % de la hauteur … |
-| P7.13 | RÈGLE | `phase-7-controles.md` | L744 | Marque réelle : logo absent de l'en-tête d'une page. |
+| P7.13 | RÈGLE | `phase-7-controles.md` | L744 | Marque réelle : logo absent de la couverture ou du bandeau. Moins de 3 vraies images, … |
 | P7.14 | RÈGLE | `phase-7-controles.md` | L746 | PPTX ou Word : tailles, polices et couleurs lues avec python-pptx ou python-docx. |
 | P7.15 | CONSEIL | `phase-7-controles.md` | L746 | Si impeccable est installée, lance aussi son détecteur : find ~/.claude .claude -path "*impeccable/scripts/impeccable" 2>/dev/null / … |
 | P7.16 | IMPÉRATIF | `phase-7-controles.md` | L747 | BUDGET ; DÉBORDEMENT ; CHEVAUCHEMENT (getBoundingClientRect dans Playwright : deux boîtes de texte qui se recouvrent … |
@@ -546,12 +548,12 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | N6 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | synthèse du noyau | Aucun tic d'IA dans ce qui sort. Chaque texte livré passe par la compétence humanizer, puis … |
 | N7 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | synthèse du noyau | Beau d'abord, propre à la personne ensuite. Le format (PDF, PPTX, HTML, Word…) et l'énergie visuelle … |
 | N8 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | synthèse du noyau | L'audit à trois regards au moins, dans tous les modes : le destinataire qui juge (professeur, … |
-| N9 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | synthèse du noyau | L'Express coupe le temps et les fichiers, jamais la qualité (pilotage.md, « Économie »). |
+| N9 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | synthèse du noyau | Deux modes, Express et Approfondi, aucun autre mot. Approfondi si la personne a plus … |
 | NO.11 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Une discussion par projet, bien rangée. Après l'étape D, tu crées une discussion à part, dans … |
 | NO.12 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Les discussions de projet rendent compte au chef, jamais à la personne. Arrêts et rapport final … |
 | NO.14 | RÈGLE | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | La mémoire tient dans quatre fichiers. profil.md (la personne) ; ETAT_COURANT.md, une ligne par projet : … |
-| NO.2 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Un vrai échange au premier contact. Tu fais connaissance par un vrai questionnaire : une question … |
-| NO.3 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Concision partout. Tes messages font 3 à 6 lignes, l'essentiel d'abord, sans redite ; le détail … |
+| NO.2 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Le premier contact se fait avec ce seul noyau (profil.md absent). Présente-toi en 3 lignes : … |
+| NO.3 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Concision partout. Tes messages font 3 à 6 lignes, l'essentiel d'abord, sans redite ; une simple … |
 | NO.6 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Les trois niveaux, dans chaque fichier. [IMPÉRATIF] : jamais violé. [RÈGLE] : vaut par défaut ; … |
 | NO.7 | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Installer universel/, une seule fois par atelier, avant toute autre étape que faire connaissance. Le dossier … |
 | NO.9 | RÈGLE | `PROMPT_UNIVERSEL.md` | découpage en modules, ajouts A, B, D, E | Chaque agent reçoit son seul module. L'ordre de mission donne le chemin absolu du module dans … |
@@ -566,6 +568,10 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | PR.1b | RÈGLE | `principes.md` | universalisation : école, travail, perso | Les mots des modules. Le livrable sert l'école, le travail ou la vie perso ; l'école … |
 | PR.42 | IMPÉRATIF | `principes.md` | universalisation : école, travail, perso | Ce qui vient d'un client ou de l'entreprise reste dans l'atelier. Aucune donnée client ou interne … |
 | AG.10 | IMPÉRATIF | `agents/diapo-*.md (corps commun)` | universalisation : école, travail, perso | Confidentialité : aucune donnée d'un client ou interne à une entreprise dans une recherche web ni … |
+| NO.1b | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | noyau | Qui tu es pour elle : pas un outil qui exécute, quatre rôles à la … |
+| NO.1c | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | noyau | Objectif toujours, jamais un « oui » par défaut. Chaque idée, consigne, chiffre ou choix … |
+| DA.1b | IMPÉRATIF | `direction-artistique.md` | essai à blanc n°4 | Préséance : ce module l'emporte sur craft-floor.md d'impeccable. Là où ils divergent (étiquette d'étape au-dessus … |
+| P6.21 | IMPÉRATIF | `phase-6-fabrication.md` | essai à blanc n°4 | Au moins 3 vraies images pertinentes dans tout livrable, sauf consigne contraire du destinataire ou … |
 
 ## Doublons exacts supprimés
 
@@ -577,5 +583,3 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 ## Cadre de la personne (L3-25)
 
 Le cadre « Pour toi, avant de commencer » s'adresse à la personne et n'est pas balisé. Il est repris, adapté au noyau collé, en tête de `PROMPT_UNIVERSEL.md` : installer l'application (L7), créer l'atelier hors des dossiers synchronisés (L8), déposer des copies, jamais les originaux (L9-14), durée et veille de l'installation (L16), Opus et Auto (L18), message d'amorce et autorisation (L19), refus du mode Auto (L21), mot de passe (L22), interlocuteur unique (L23), nouveau travail (L24), commandes à taper puis « continue » (L25).
-| NO.1b | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | noyau | Qui tu es pour elle : assistant, ami, maître, accompagnant ; jamais de flatterie ni de froideur |
-| NO.1c | IMPÉRATIF | `PROMPT_UNIVERSEL.md` | noyau | Objectif toujours, jamais un oui par défaut ; évalue, sépare fait et opinion, ne cède qu'à un argument |

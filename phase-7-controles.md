@@ -28,7 +28,7 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, pour écrire `controles.py
 
 **[RÈGLE P7.12]** **Aplats, titres et couverture** : bandeau de titre de plus de 10 % de la hauteur de la page, titre-phrase de plus de 70 caractères ou de plus de 2 lignes, produit de couverture sous le contraste de 3:1 avec son fond, plus de 3 chiffres en couverture.
 
-**[RÈGLE P7.13]** Marque réelle : logo absent de l'en-tête d'une page.
+**[RÈGLE P7.13]** Marque réelle : logo absent de la couverture ou du bandeau. Moins de 3 vraies images, ou une page à grand blanc (`phase-6-fabrication.md`, P6.21).
 
 **[RÈGLE P7.14]** PPTX ou Word : tailles, polices et couleurs lues avec `python-pptx` ou `python-docx`.
 

@@ -4,7 +4,7 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, avec `direction-artistique
 
 **[RÈGLE P6.1]** **Le système avant les pages.** `tokens.css` : les 9 couleurs (en Vivant, plus les teintes du tableau des rôles) ; l'échelle des tailles ; les espacements 8, 16, 24, 32, 48, 64, 96, 128 ; 3 épaisseurs de trait ; un seul rayon d'angle.
 
-**[RÈGLE P6.2]** `travail/build.py` produit chaque page et le livrable à partir de `02_contenu.yaml`. Une correction change une entrée YAML ou une règle CSS, puis `python travail/build.py --pages 7,12`. Toute valeur écrite en dur dans une page est une erreur.
+**[RÈGLE P6.2]** `travail/build.py` produit chaque page et le livrable à partir de `02_contenu.yaml`. Une correction change une entrée YAML ou une règle CSS, puis `python travail/build.py --pages 7,12`. Toute valeur écrite en dur dans une page est une erreur. **Recette de `--pages`**, même pour un A4 en un seul HTML : `page.pdf(..., page_ranges="7,12")` n'imprime que ces pages, écrites dans `travail/rendus/pages-7-12.pdf`, puis converties en PNG ; ce rendu partiel ne compte pas dans `RENDUS COMPLETS`. Sans `--pages`, `build.py` applique le compteur de `pilotage.md` (PI.31) et range le PDF complet, horodaté, dans `travail/rendus/`.
 
 ## La chaîne selon le format
 
@@ -53,4 +53,8 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, avec `direction-artistique
 
 **[RÈGLE P6.19]** **Livraison** : le livrable final (PDF, plus PPTX ou Word) va dans `<sous-dossier>/livraison/`, que `build.py` crée par chemin absolu ; `travail/` garde le reste. `build.py` écrit aussi `travail/livrable.txt`, le texte du PDF final page par page.
 
-**[RÈGLE P6.20]** En phase 6, `diapo-fabricant` écrit aussi `travail/controles.py`, d'après « La couleur », « La typographie », « Le rythme et les gabarits » (`direction-artistique.md`) et la liste de `phase-7-controles.md`.
+**[RÈGLE P6.20]** En phase 6, `diapo-fabricant` écrit aussi `travail/controles.py`, d'après « La couleur », « La typographie », « Le rythme et les gabarits », « Les images » (`direction-artistique.md`) et la liste de `phase-7-controles.md`.
+
+## Les images
+
+**[IMPÉRATIF P6.21]** **Au moins 3 vraies images pertinentes dans tout livrable**, sauf consigne contraire du destinataire ou de la personne : libres de droits et sourcées (Unsplash, Pexels, Wikimedia Commons, ou site officiel de la marque, cité), téléchargées par script dans `travail/images/` et créditées dans `travail/credits.md` et sous l'image (`direction-artistique.md`, « Les images »). **Une page à grand blanc** (une bande vide de plus de 35 % de la hauteur, mesurée par script sur l'image de la page) reçoit une image ou un visuel (schéma, carte, chiffre en grand), jamais du texte étiré. `controles.py` compte les images et mesure les blancs : moins de 3 images, ou une page à grand blanc, fait échouer la porte de la phase 6.

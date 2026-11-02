@@ -6,7 +6,7 @@ Qui le lit, et quand : `diapo-redacteur`, avec `principes.md`, en phase 4 et pou
 
 **[IMPÉRATIF P4.2]** Toute correction de texte ultérieure (audit, refonte) repasse par les points 1 à 5, sur les seules phrases modifiées.
 
-**[IMPÉRATIF P4.3]** **1. `humanizer` sur chaque texte, avant toute livraison.** L'agent passe la compétence `humanizer` sur ces textes, et `stop-slop` en Standard et en Approfondi ; il liste les phrases fautives avec leur numéro de ligne et ne corrige que celles-là, jamais l'ensemble. Il écrit dans son statut, pour chaque fichier, « humanizer passé » ; la porte refuse un texte livré sans cette ligne.
+**[IMPÉRATIF P4.3]** **1. `humanizer` sur chaque texte, avant toute livraison.** L'agent passe la compétence `humanizer` sur ces textes, et `stop-slop` en Approfondi ; il liste les phrases fautives avec leur numéro de ligne et ne corrige que celles-là, jamais l'ensemble. Il écrit dans son statut, pour chaque fichier, « humanizer passé » ; la porte refuse un texte livré sans cette ligne.
 
 **[RÈGLE P4.4]** **2. Ces deux skills sont écrites pour l'anglais** : applique leurs principes sans rien traduire. La liste ci-dessous prime ; `stop-slop` ne supprime pas les adverbes d'un texte français chiffré.
 
@@ -36,7 +36,7 @@ Qui le lit, et quand : `diapo-redacteur`, avec `principes.md`, en phase 4 et pou
 
 **[IMPÉRATIF P4.16]** **Tiret long et demi-tiret interdits aussi en anglais** : un intervalle s'écrit « from 60k to 91k » ; le trait d'union d'un mot composé (12-week) reste permis.
 
-**[RÈGLE P4.17]** **`humanizer` et `stop-slop` s'appliquent directement**, sans l'adaptation du point 2 (`stop-slop` seulement en Standard et en Approfondi).
+**[RÈGLE P4.17]** **`humanizer` et `stop-slop` s'appliquent directement**, sans l'adaptation du point 2 (`stop-slop` seulement en Approfondi).
 
 **[IMPÉRATIF P4.18]** **Tics anglais**, contrôlés par script, y compris au contrôle final de la phase 9 : delve, tapestry, landscape, pivotal, crucial, robust (sauf sens technique), leverage, seamless, holistic, synergy, game-changer, navigate the complexities, in today's fast-paced world, it is worth noting, moreover, furthermore, testament to, underscore, foster, unlock, elevate, embark, realm, ever-evolving, « not only… but also », et les conclusions d'une ligne qui répètent le paragraphe.
 

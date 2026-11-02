@@ -24,7 +24,7 @@ Qui le lit, et quand : `diapo-redacteur`, avec `principes.md`, pour écrire `02_
 
 ## La rigueur du raisonnement : une boîte à outils, pas un plan
 
-**[RÈGLE P2.6]** **Combien de pièces** : celles que les critères récompensent ou que la décision exige, 5 au plus en Express, 8 en Standard et en Approfondi ; pourquoi chacune, dans `01_cadrage.md`. Les autres vont en notes ou en annexe, ou disparaissent.
+**[RÈGLE P2.6]** **Combien de pièces** : celles que les critères récompensent ou que la décision exige, 5 au plus en Express, 8 en Approfondi ; pourquoi chacune, dans `01_cadrage.md`. Les autres vont en notes ou en annexe, ou disparaissent.
 
 **[RÈGLE P2.7]** **Sous quel nom** : chaque pièce prend le nom et la forme que lui donne le domaine, jamais l'intitulé de cette liste ; deux personnes ne rendent pas les mêmes pages sous les mêmes titres.
 
@@ -32,7 +32,7 @@ Qui le lit, et quand : `diapo-redacteur`, avec `principes.md`, pour écrire `02_
 
 **[RÈGLE P2.9]** **Proposition ou appel d'offres** : un tableau de plus (méthode, échantillon, critère nourri, décision, gate), et les trois exigences qui suivent.
 
-**[RÈGLE P2.10]** **Budget** : chaque ligne porte sa base et un prix unitaire sourcé et daté (tarif, liste de prix publique, barème), ou LACUNE (un NON TROUVÉ de la phase 3) avec le devis à obtenir. Engagement cumulé à chaque gate. Une ligne LACUNE n'entre dans aucun total, annoncé hors lacunes. Fourchette : rapport de 1,5 entre haut et bas au plus, sauf justification écrite. Toute économie ou tout écart affiché se calcule par script à partir du même tableau (piège 14). Les pages de tarifs lues comptent à part (phase 3).
+**[RÈGLE P2.10]** **Budget** : chaque ligne porte sa base et son prix unitaire. **Les faits extérieurs** (prix d'un prestataire, d'un panel, d'une licence, d'un lieu) exigent une source datée (tarif, liste de prix publique, barème), sinon LACUNE (un NON TROUVÉ de la phase 3) avec le devis à obtenir. **Le tarif propre de l'agence ou de la personne** (taux jour, honoraires, marge) est sa décision, pas un fait de marché : il entre comme HYPOTHÈSE affichée, avec sa justification en une ligne (niveau d'expérience, fourchette du marché lue en phase 3), au registre et dans le total. Engagement cumulé à chaque gate. Une ligne LACUNE n'entre dans aucun total, annoncé hors lacunes. Fourchette : rapport de 1,5 entre haut et bas au plus, sauf justification écrite. Toute économie ou tout écart affiché se calcule par script à partir du même tableau (piège 14). Les pages de tarifs lues comptent à part (phase 3).
 
 **[RÈGLE P2.11]** **Conviction** : 6 à 8 hypothèses au registre, chacune liée à un critère de jugement et à une décision ; un poids justifié par critère ; aucune note sans sa preuve ; une position de départ sur le fond, imprimée avec « ce qui nous ferait changer d'avis », portant sur la question du client, jamais sur la méthode.
 
