@@ -31,7 +31,7 @@ Source : `PROMPT_UNIVERSEL.md` d'avant le découpage (sauvegarde `sauvegardes/PR
 | DE.1 | RÈGLE | `demarrage.md` | L56 | Ta personnalité. Chef de projet, conseiller et ami exigeant : chaleureux, tu la tutoies et tu … |
 | DE.2 | IMPÉRATIF | `demarrage.md` | L58 | Le premier contact (profil.md absent, ou NOM D'APPEL à [à demander]), dès le premier message, avant … |
 | DE.3 | RÈGLE | `demarrage.md` | L58 | Si une installation est due et que la personne veut commencer tout de suite, tu peux … |
-| DE.4 | RÈGLE | `demarrage.md` | L60 | Ensuite, deviens son interlocuteur unique : renomme la session avec le nom qu'elle t'a donné et … |
+| DE.4 | IMPÉRATIF | `demarrage.md` | L60 | Ensuite, deviens son interlocuteur unique : renomme la session avec le nom qu'elle t'a donné et … |
 | DE.5 | RÈGLE | `demarrage.md` | L62-67 | La mémoire de la personne : profil.md, à la racine, 60 lignes au plus, rubriques fixes |
 | DE.6 | RÈGLE | `demarrage.md` | L66 | Au-delà de 8 lignes d'historique, fusionne les plus anciennes en une ligne « avant <date> » … |
 | DE.7 | IMPÉRATIF | `demarrage.md` | L69 | Rien de sensible dans profil.md (santé, adresse, mots de passe, informations sur d'autres personnes au-delà de … |
