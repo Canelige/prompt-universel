@@ -4,7 +4,19 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, avec `direction-artistique
 
 **[RÈGLE P6.1]** **Le système avant les pages.** `tokens.css` : les 9 couleurs (en Vivant, plus les teintes du tableau des rôles) ; l'échelle des tailles ; les espacements 8, 16, 24, 32, 48, 64, 96, 128 ; 3 épaisseurs de trait ; un seul rayon d'angle.
 
-**[RÈGLE P6.2]** `travail/build.py` produit chaque page et le livrable à partir de `02_contenu.yaml`. Une correction change une entrée YAML ou une règle CSS, puis `python travail/build.py --pages 7,12`. Toute valeur écrite en dur dans une page est une erreur. **Recette de `--pages`**, même pour un A4 en un seul HTML : `page.pdf(..., page_ranges="7,12")` n'imprime que ces pages, écrites dans `travail/rendus/pages-7-12.pdf`, puis converties en PNG ; ce rendu partiel ne compte pas dans `RENDUS COMPLETS`. Sans `--pages`, `build.py` applique le compteur de `pilotage.md` (PI.31) et range le PDF complet, horodaté, dans `travail/rendus/`.
+**[RÈGLE P6.2]** `travail/build.py` produit chaque page et le livrable à partir de `02_contenu.yaml`. Une correction change une entrée YAML ou une règle CSS, puis `python travail/build.py --pages 7,12`. Toute valeur écrite en dur dans une page est une erreur. **Recette de `--pages`**, même pour un A4 en un seul HTML : `page.pdf(..., page_ranges="7,12")` n'imprime que ces pages, écrites dans `travail/rendus/pages-7-12.pdf`, puis converties en PNG ; ce rendu partiel ne compte pas dans `RENDUS COMPLETS`. **Recette de remplacement**, si un PDF livré existe dans `livraison/` : PyMuPDF remplace chaque page dans ce PDF, puis `livrable.txt` est régénéré page par page depuis le PDF obtenu.
+
+```python
+doc, part = pymupdf.open(livre), pymupdf.open(partiel)  # pages = [7, 12], dans l'ordre du rendu partiel
+toc, meta = doc.get_toc(), doc.metadata
+for i, n in enumerate(pages):
+    doc.delete_page(n - 1)
+    doc.insert_pdf(part, from_page=i, to_page=i, start_at=n - 1)
+doc.set_toc(toc); doc.set_metadata(meta)
+doc.save(livre + ".tmp", garbage=4, deflate=True); doc.close(); os.replace(livre + ".tmp", livre)
+```
+
+Le PDF assemblé ne compte pas dans `RENDUS COMPLETS` et ne va jamais dans `travail/rendus/`, où la porte compte les rendus complets. Une correction qui change le nombre de pages ne se remplace pas : elle demande un rendu complet. Sans `--pages`, `build.py` applique le compteur de `pilotage.md` (PI.31) et range le PDF complet, horodaté, dans `travail/rendus/`.
 
 ## La chaîne selon le format
 

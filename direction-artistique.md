@@ -161,7 +161,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[IMPÉRATIF DA.53]** e) **Plancher, pas seulement plafond** : Vivant et Affiche, au moins 3 moments de couleur par page (signature, aplat ou carte à liseré, graphique ou chiffres en couleur) et couverture avec aplat d'au moins un quart de la page ; Sobre, au moins un moment de couleur franche par page, chiffres clés dans la couleur de leur rôle. Moins de 3 % de surface colorée sur une page : défaut, sauf Sobre typographique choisi et écrit dans `05_charte.md`.
 
-**[RÈGLE DA.54]** **Mesure** du point 9 e, par script, sur le PNG de chaque page rendue (110 dpi, phase 7) : part des pixels de chroma OKLCH supérieur à 0,04, photos exclues (numérateur et dénominateur). Plancher de 3 % page par page ; plage de l'énergie (axe 1) sur l'ensemble des pages.
+**[RÈGLE DA.54]** **Mesure** du point 9 e, par script, sur le PNG de chaque page rendue (110 dpi, phase 7) : part des pixels de chroma OKLCH supérieur à 0,04, photos exclues (numérateur et dénominateur). Plancher de 3 % page par page ; plage de l'énergie (axe 1) sur l'ensemble des pages. En Vivant, moins de 10 % sur l'ensemble bloque la porte de la phase 7 (`phase-7-controles.md`, P7.10b) : prévois dès la charte le bandeau, les tuiles en aplat et les fonds de section.
 
 **[RÈGLE DA.55]** f) **Pastilles de statut** (FAIT, HYPOTHÈSE, À VÉRIFIER) permises en Vivant, couleurs du tableau des rôles uniquement, une par bloc au plus ; les autres tags d'incertitude restent du texte. Jamais de vert, de jaune ou de rouge ajoutés hors palette.
 

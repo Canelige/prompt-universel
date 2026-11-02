@@ -22,13 +22,13 @@ Qui le lit, et quand : `diapo-redacteur`, avec `principes.md`, en phase 4 et pou
 
 **[RÈGLE P4.10]** **5. La typographie française** : espace insécable avant « : ; ! ? % », à l'intérieur des guillemets « », entre un nombre et son unité, dans les milliers ; apostrophe typographique.
 
-**[IMPÉRATIF P4.11]** **6. Chef : la porte de la phase 4.** `python travail/calculs.py verifier` : un nombre nouveau ou disparu fait échouer la phase, 2 passes au plus.
+**[IMPÉRATIF P4.11]** **6. Chef : la porte de la phase 4.** `python travail/calculs.py verifier` : un nombre nouveau ou disparu fait échouer la phase, 2 passes au plus. `portes.py 4` extrait aussi les titres de `02_contenu.yaml` et les compare à `titres_seuls.txt` : chaque titre ajouté, retiré ou changé va dans `PREUVES.md`, puis `titres_seuls.txt` est réécrit depuis le YAML.
 
 **[IMPÉRATIF P4.12]** Une correction ultérieure qui change un chiffre : on corrige d'abord sa ligne dans `03_verification.md`, on relance `geler`, on relance la porte.
 
 ## Langue du livrable
 
-**[RÈGLE P4.13]** Tout ce qui s'imprime est dans la langue de la rubrique LANGUE de `ETAT.md` : titres, pieds de page, étiquettes (en anglais, FAIT, HYPOTHÈSE et LACUNE deviennent FACT, ASSUMPTION et GAP), mentions fixes des modules (« source unique », « non trouvé », titre de l'annexe Sources). L'attribut `lang` du HTML, le jeu de glyphes testé (phase 5) et les contrôles de typographie (phase 7) suivent la même langue.
+**[RÈGLE P4.13]** Tout ce qui s'imprime est dans la langue de la rubrique LANGUE de `ETAT.md` : titres, pieds de page, étiquettes (en anglais, FAIT, HYPOTHÈSE et LACUNE deviennent FACT, ASSUMPTION et GAP), mentions fixes des modules (« source unique », « non trouvé », titre de l'annexe Sources), et les sources elles-mêmes : `build.py` imprime la colonne « Citation (langue du livrable) » de `03_verification.md` (`phase-3-faits.md`, P3.1), jamais les colonnes Source ou Extrait. Une source ne s'imprime jamais dans une autre langue que celle du livrable. L'attribut `lang` du HTML, le jeu de glyphes testé (phase 5) et les contrôles de typographie (phase 7) suivent la même langue.
 
 **[RÈGLE P4.14]** **Livrable en anglais** : ce qui suit remplace les tics français du point 3 et la typographie du point 5.
 

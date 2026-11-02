@@ -2,10 +2,10 @@ Qui le lit, et quand : `diapo-verificateur`, avec `principes.md`, en phase 1 (ch
 
 # Phase 3 · Faits et chiffres (`diapo-verificateur`)
 
-**[RÈGLE P3.1]** L'agent continue `travail/03_verification.md`, ligne par ligne, sans refaire les lignes déjà verrouillées.
+**[RÈGLE P3.1]** L'agent continue `travail/03_verification.md`, ligne par ligne, sans refaire les lignes déjà verrouillées. La colonne « Citation (langue du livrable) » donne la mention de source telle qu'elle s'imprimera (sous le chiffre et dans l'annexe Sources, au format de `phase-9-livraison.md`, P9.6), écrite dans la `LANGUE DU LIVRABLE` de `ETAT.md`, quelle que soit la langue du reste du tableau : `build.py` l'imprime telle quelle, sans la traduire ni la recomposer depuis les autres colonnes. Une source ne s'imprime jamais dans une autre langue que celle du livrable.
 
-| # | Affirmation | Type | Poids | Verdict | Source (organisme, date, URL lue ; ou document et page ; ou fichier de collecte ; ou script) | Extrait (15 mots max, pour EXTERNE et CAS) | CONTRE (lignes A) |
-|---|---|---|---|---|---|---|---|
+| # | Affirmation | Type | Poids | Verdict | Source (organisme, date, URL lue ; ou document et page ; ou fichier de collecte ; ou script) | Extrait (15 mots max, pour EXTERNE et CAS) | Citation (langue du livrable) | CONTRE (lignes A) |
+|---|---|---|---|---|---|---|---|---|
 
 ## Les types de preuve
 
@@ -63,4 +63,4 @@ Qui le lit, et quand : `diapo-verificateur`, avec `principes.md`, en phase 1 (ch
 
 **[RÈGLE P3.25]** `calculs.py` a deux commandes, `geler` et `verifier` ; `geler` relève, dans `02_contenu.yaml` et `donnees.csv`, les nombres qui portent une unité, un symbole (%, €, $) ou une année (pas gelés : les entiers de 1 à 10 sans unité, les numéros de page, les jours de date). `donnees.csv` : une ligne par valeur affichée dans un graphique (série, valeur, unité, année, identifiant de la ligne de vérification).
 
-**[RÈGLE P3.26]** **Chef : la porte de la phase 3.** Aucune ligne A sans verdict ; relis l'extrait de 3 lignes A tirées par `portes.py` ; lance `python travail/calculs.py geler`, qui écrit `travail/chiffres_geles.txt`. Ensuite, **arrêt C**.
+**[RÈGLE P3.26]** **Chef : la porte de la phase 3.** Aucune ligne A sans verdict ; aucune ligne affichée sans « Citation (langue du livrable) » ; relis l'extrait de 3 lignes A tirées par `portes.py` ; lance `python travail/calculs.py geler`, qui écrit `travail/chiffres_geles.txt`. Ensuite, **arrêt C**.

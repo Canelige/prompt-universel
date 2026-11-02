@@ -60,7 +60,7 @@ Qui le lit, et quand : la discussion de projet, après l'étape E, pour toute la
 
 **[IMPÉRATIF P1.20]** **Les 3 à 5 chiffres décisifs** (poids A) sont verrouillés maintenant : `diapo-verificateur`, sur ces seules lignes, écrit les premières lignes de `travail/03_verification.md` ; ses pages lues comptent dans le plafond de la phase 3. Un chiffre qui contredit un titre : on change le titre. Une ligne INTROUVABLE devient une HYPOTHÈSE chiffrée, ou disparaît.
 
-**[RÈGLE P1.21]** **Test des titres** : un `diapo-lecteur` neuf reçoit **uniquement** la colonne des titres, extraite par script dans `travail/titres_seuls.txt`, et écrit en 5 lignes la réponse, les raisons et la décision, puis les trous et les doublons. S'il se trompe, reprends les titres (2 passes au plus).
+**[RÈGLE P1.21]** **Test des titres** : un `diapo-lecteur` neuf reçoit **uniquement** la colonne des titres, extraite par script dans `travail/titres_seuls.txt` (ce fichier vaut pour la phase 1 ; les titres de l'audit sont réextraits de `02_contenu.yaml`, `phase-8-audit.md`, P8.3), et écrit en 5 lignes la réponse, les raisons et la décision, puis les trous et les doublons. S'il se trompe, reprends les titres (2 passes au plus).
 
 **[CONSEIL P1.22]** Si l'agent Agency `Executive Summary Generator` est installé, fais-lui aussi relire la synthèse, avec `model: sonnet`.
 

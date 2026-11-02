@@ -24,6 +24,8 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, pour écrire `controles.py
 
 **[RÈGLE P7.10]** **Surface colorée** (mesure du point 9 e) hors de la plage de l'énergie choisie, sur l'ensemble du livrable.
 
+**[IMPÉRATIF P7.10b]** **Vivant : la plage est bloquante.** `portes.py 7` lit la surface colorée d'ensemble dans `07_controles.md` : sous 10 %, la porte de la phase 7 échoue. Pour remonter, dans cet ordre : un bandeau de titre en aplat de la couleur de structure sur chaque page de contenu (10 % de la hauteur au plus, P7.12) ; les tuiles de chiffres en aplat plein plutôt qu'en contour ; l'en-tête des tableaux en aplat ; un fond de section teinté (couleur du rôle de la section) sur les pages de rupture et les blocs de synthèse. Jamais en teintant tout le fond de page ni avec une teinte hors du tableau des rôles. Puis rendu des seules pages modifiées (P6.2) et nouvelle mesure.
+
 **[RÈGLE P7.11]** **Plancher de couleur** : page sous 3 % de surface colorée (sauf Sobre typographique choisi), ou sous le nombre de moments de couleur de l'énergie (point 9 e), ou couverture Vivant ou Affiche sans aplat d'un quart de la page.
 
 **[RÈGLE P7.12]** **Aplats, titres et couverture** : bandeau de titre de plus de 10 % de la hauteur de la page, titre-phrase de plus de 70 caractères ou de plus de 2 lignes, produit de couverture sous le contraste de 3:1 avec son fond, plus de 3 chiffres en couverture.
