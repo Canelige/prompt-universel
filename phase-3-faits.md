@@ -61,6 +61,6 @@ Qui le lit, et quand : `diapo-verificateur`, avec `principes.md`, en phase 1 (ch
 
 **[RÈGLE P3.24]** **Les fichiers** : l'agent écrit `travail/calculs.py` et `travail/donnees.csv` sans rien exécuter ; c'est le chef qui lance les scripts.
 
-**[RÈGLE P3.25]** `calculs.py` a deux commandes, `geler` et `verifier` ; `geler` relève, dans `02_contenu.yaml` et `donnees.csv`, les nombres qui portent une unité, un symbole (%, €, $) ou une année (pas gelés : les entiers de 1 à 10 sans unité, les numéros de page, les jours de date). `donnees.csv` : une ligne par valeur affichée dans un graphique (série, valeur, unité, année, identifiant de la ligne de vérification).
+**[RÈGLE P3.25]** `calculs.py` a deux commandes, `geler` et `verifier` ; `geler` relève, **dans `02_contenu.yaml` seulement** (jamais dans `donnees.csv`, dont les valeurs ne sont pas du texte et donneraient de faux écarts à la porte de la phase 4), les nombres qui portent une unité, un symbole (%, €, $) ou une année (pas gelés : les entiers de 1 à 10 sans unité, les numéros de page, les jours de date). `donnees.csv` : une ligne par valeur affichée dans un graphique (série, valeur, unité, année, identifiant de la ligne de vérification).
 
 **[RÈGLE P3.26]** **Chef : la porte de la phase 3.** Aucune ligne A sans verdict ; aucune ligne affichée sans « Citation (langue du livrable) » ; relis l'extrait de 3 lignes A tirées par `portes.py` ; lance `python travail/calculs.py geler`, qui écrit `travail/chiffres_geles.txt`. Ensuite, **arrêt C**.

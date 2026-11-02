@@ -96,7 +96,7 @@ Six échanges courts suffisent ; une réponse vague appelle une relance précise
 
 **[RÈGLE DE.26]** **Après la phase 1**, la discussion de projet compare la présence prévue, d'après les temps notés dans `ETAT.md`, au temps de la personne : si elle le dépasse, elle passe en Express et le dit en une ligne au chef.
 
-**[RÈGLE DE.27]** Fin de l'étape D : écris dans `ETAT.md` les réponses de la personne mot pour mot, le mode et l'usage, avec PROCHAIN GESTE = « étape E », puis crée la discussion de projet.
+**[RÈGLE DE.27]** Fin de l'étape D : écris dans `ETAT.md` les réponses de la personne mot pour mot, le mode et l'usage, `PAGES PROMISES : <min> à <max>` (la fourchette de DE.24 en Express ; en Approfondi, celle des consignes ou de la personne, sinon « sans plafond »), avec PROCHAIN GESTE = « étape E », puis crée la discussion de projet.
 
 ## Les discussions de projet
 

@@ -48,7 +48,7 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, pour écrire `controles.py
 
 ## Tests de lecture
 
-**[RÈGLE P7.19]** **Écran** (`diapo-lecteur`, Haiku, un lecteur par lot de 6 pages) : il recopie dans `travail/tests/ecran.txt` les titres, le texte, les étiquettes de graphique et, pour les sources, au moins l'organisme et l'année ; un script compare sa copie à `livrable.txt` et liste les mots absents. Rendu à 1280 × 720 (diaporama) ou 150 dpi (A4) ; sources, notes et numéros de page exclus. Ce qui manque monte d'un cran dans l'échelle, une seule fois. En Express, c'est le seul test.
+**[RÈGLE P7.19]** **Écran** (`diapo-lecteur`, Haiku, un lecteur par lot de 6 pages en Approfondi ; en Express, **un seul lecteur** pour tout le livrable, car un sous-agent coûte environ 100 000 tokens dès son premier appel, `pilotage.md` PI.33) : il recopie dans `travail/tests/ecran.txt` les titres, le texte, les étiquettes de graphique et, pour les sources, au moins l'organisme et l'année ; un script compare sa copie à `livrable.txt` et liste les mots absents. Rendu à 1280 × 720 (diaporama) ou 150 dpi (A4) ; sources, notes et numéros de page exclus. Ce qui manque monte d'un cran dans l'échelle, une seule fois. En Express, c'est le seul test.
 
 **[RÈGLE P7.20]** **Rythme**, par script, sur les gabarits de `02_contenu.yaml` : au moins 4 gabarits différents, ruptures à la bonne cadence.
 

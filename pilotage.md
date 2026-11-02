@@ -62,7 +62,7 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 
 ## La mémoire du projet : `travail/ETAT.md`
 
-**[RÈGLE PI.20]** 40 lignes au plus, rubriques fixes : PHASE et TYPE (création, refonte complète, refonte ciblée) ; MODE (Express ou Approfondi, et sa base : « temps et usage » ou « temps seul ») ; `LANGUE DU LIVRABLE : <langue>` (relevée dans `00_materiel.md`, français par défaut : tout ce qui s'imprime dans le livrable est dans cette langue, `phase-4-ecriture.md`) ; PYTHON (chemin du lanceur) ; `ATELIER : <chemin absolu>` (racine de l'atelier) ; DISCUSSION (titre et groupe) ; USAGE (à chaque relevé) ; `PAGES WEB LUES : n / plafond` (à jour à chaque retour du vérificateur) ; DÉCISIONS DE LA PERSONNE (mot pour mot, 6 lignes au plus) ; FICHIERS (seulement ceux dont le statut n'est pas `FIN: OK`) ; ORDRES EN COURS (agent, identifiant rendu par l'outil, fichier attendu) ; MISSIONS DEPUIS LE DERNIER COMPACTAGE et MISSIONS TOTAL (des nombres) ; `RENDUS COMPLETS : n / 3` (PI.31) ; PASSES (compteurs de boucle) ; TEMPS (début et fin de chaque phase, relevés avec la commande `date`, jamais estimés) ; RESTE (défauts acceptés) ; PROCHAIN GESTE (une phrase exacte).
+**[RÈGLE PI.20]** 40 lignes au plus, rubriques fixes : PHASE et TYPE (création, refonte complète, refonte ciblée) ; MODE (Express ou Approfondi, et sa base : « temps et usage » ou « temps seul ») ; `LANGUE DU LIVRABLE : <langue>` (relevée dans `00_materiel.md`, français par défaut : tout ce qui s'imprime dans le livrable est dans cette langue, `phase-4-ecriture.md`) ; PYTHON (chemin du lanceur) ; `ATELIER : <chemin absolu>` (racine de l'atelier) ; DISCUSSION (titre et groupe) ; USAGE (à chaque relevé) ; `PAGES WEB LUES : n / plafond` (à jour à chaque retour du vérificateur) ; DÉCISIONS DE LA PERSONNE (mot pour mot, 6 lignes au plus) ; FICHIERS (seulement ceux dont le statut n'est pas `FIN: OK`) ; ORDRES EN COURS (agent, identifiant rendu par l'outil, fichier attendu) ; MISSIONS DEPUIS LE DERNIER COMPACTAGE et MISSIONS TOTAL (des nombres) ; `RENDUS COMPLETS : n / 3` (PI.31) ; `PAGES PROMISES : <min> à <max>` (DE.27, contrôlé par P6.23) ; PASSES (compteurs de boucle) ; TEMPS (début et fin de chaque phase, relevés avec la commande `date`, jamais estimés) ; RESTE (défauts acceptés) ; PROCHAIN GESTE (une phrase exacte).
 
 **[RÈGLE PI.21]** Mets-le à jour **avant** de lancer un agent, **après** chaque fin de phase et **après chaque fichier livrable produit** (build, PDF, PPTX, Word).
 
@@ -90,7 +90,7 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 
 **[RÈGLE PI.32]** **Avant de lancer un rendu, annonce l'usage que tu estimes** (en % de session et de semaine).
 
-**[CONSEIL PI.33]** Coût mesuré d'un rendu Express : [à mesurer]
+**[CONSEIL PI.33]** Coût mesuré d'un rendu Express (essai n°6, A4 de 10 pages, 13 feuilles) : 1 h 17 ; 17 agents ; 2 rendus complets ; 10 pages web ; 68 millions de tokens traités dont 21 en Opus, 46 en Sonnet, 1,4 en Haiku (4,4 millions hors lectures de cache) ; le fabricant pèse plus de la moitié des agents, le chef près d'un tiers. **La mesure est celle des tokens traités** (entrée, écriture et lecture de cache, sortie), lue dans les journaux `subagents/agent-<id>.jsonl` (appels dédoublonnés par identifiant de message) et dans le tien, **pas la taille de contexte donnée par la notification de fin d'agent**, qui ne dit que la taille du dernier appel. **Un sous-agent coûte environ 100 000 tokens dès son premier appel** (contexte de départ chargé par l'outil) : en Express, un seul lecteur Haiku pour tout le test écran (P7.19), jamais un par lot. Ce rendu a fait passer la jauge de 5 heures d'un forfait Team de 53 % à 72 % et la semaine de 16 % à 19 %, d'autres discussions tournant en parallèle (majorant : le rendu seul a coûté moins).
 
 **[RÈGLE PI.34]** **Une longue conversation coûte à chaque reprise** (tout le contexte est relu en Opus) : dès qu'un travail est livré, le chef propose `/compact` de la discussion de projet ; l'état est dans `profil.md`, `ETAT_COURANT.md` et le sous-dossier. Hors travail (conseil, discussion), le chef répond court.
 
@@ -110,7 +110,7 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 |---|---|
 | 1 | Ghost deck court ; seuls les 2 chiffres les plus décisifs sont recoupés par deux sources ; le test des titres et la contre-expertise restent. |
 | 2 | 5 pièces de rigueur au plus (les pièces exigées par le cas en sus). |
-| 3 | 6 pages web lues au plus, lignes A seulement (pages de tarifs d'une proposition : `phase-3-faits.md`). |
+| 3 | 10 pages web lues au plus (P3.15), lignes A seulement (pages de tarifs d'une proposition : `phase-3-faits.md`). |
 | 4 | `humanizer` seul, sans `stop-slop`. |
 | 5 | Pas de planche des directions : l'énergie choisie à l'étape C en tient lieu, le reste de la direction se choisit par raisonnement (« Anti-générique »). 5 gabarits au plus, 2 familles de polices. |
 | 6 | PDF seulement, plus le PPTX si les consignes l'exigent. |
@@ -118,9 +118,9 @@ Qui le lit, et quand : la discussion de projet, à son ouverture et à chaque re
 | 8 | Le destinataire et le décideur, plus le directeur artistique en un seul temps (le regard neuf sur la planche, sans `05_charte.md`). |
 | 9 | Liste de contrôle complète. |
 
-**[RÈGLE PI.40]** **Fichiers de l'Express** : six, `ETAT.md`, `01_cadrage.md` (avec les titres, la contre-expertise et tes réponses aux objections), `02_contenu.yaml`, `03_verification.md`, `build.py` et le livrable. `build.py` porte aussi la charte (thèse éditoriale et tableau des rôles en commentaire de tête, jetons, gabarits) et les contrôles de la phase 7, en fonctions : en Express, « `05_charte.md` », « `tokens.css` » et « `gabarits.css` » désignent ce commentaire et ces fonctions. Pas de `controles.py` ni de `fiche_maitrise.md` à part : la fiche est la dernière section de `03_verification.md`, ta revue hostile (`revue_chef.md`, toujours écrite) une section de `01_cadrage.md`.
+**[RÈGLE PI.40]** **Fichiers de l'Express** : six, `ETAT.md`, `01_cadrage.md` (avec les titres et la contre-expertise), `02_contenu.yaml`, `03_verification.md`, `build.py` et le livrable. `build.py` porte aussi la charte (thèse éditoriale et tableau des rôles en commentaire de tête, jetons, gabarits) et les contrôles de la phase 7, en fonctions : en Express, « `05_charte.md` », « `tokens.css` » et « `gabarits.css` » désignent ce commentaire et ces fonctions, et la direction artistique choisie sans planche (table ci-dessus, phase 5) s'y écrit aussi : pas de `direction_express.md`. Pas de `controles.py` ni de `fiche_maitrise.md` à part : la fiche est la dernière section de `03_verification.md`, ta revue hostile (`revue_chef.md`, toujours écrite) une section de `01_cadrage.md`.
 
-**[RÈGLE PI.41]** Restent permis en Express, car une règle les fait lire à un script, à un agent ou à un lecteur neuf : `statuts/`, `portes.py`, `calculs.py`, `chiffres_geles.txt`, `donnees.csv`, `credits.md`, `titres_seuls.txt`, `PREUVES.md`, `POUR_LE_CHEF.md`, `REPONSES.md`, `audit/`, et `tirer.py` avec sa graine s'il reste un tirage.
+**[RÈGLE PI.41]** Restent permis en Express, car une règle les fait lire à un script, à un agent ou à un lecteur neuf : `statuts/`, `portes.py`, `calculs.py`, `chiffres_geles.txt`, `donnees.csv`, `credits.md`, `titres_seuls.txt`, `objections.md` (tes réponses aux objections, exigées par P1.25 et lues par la porte, PI.44), `prep_audit.py` (copie par script ce que reçoivent les auditeurs, P8.9), `PREUVES.md`, `POUR_LE_CHEF.md`, `REPONSES.md`, `audit/`, et `tirer.py` avec sa graine s'il reste un tirage.
 
 ## Vérifier sans relire
 
