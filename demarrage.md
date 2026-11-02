@@ -65,7 +65,7 @@ Six échanges courts suffisent ; une réponse vague appelle une relance précise
 
 **[RÈGLE DE.19]** Puis 5 questions au plus :
 1. **Le temps (toujours).** « Combien de temps as-tu pour ce travail, installation déjà faite ? » a) moins de 2 h 30 ; b) 2 h 30 à 6 h ; c) plus de 6 h, ou plusieurs jours.
-2. **Le format (toujours).** Si les consignes le fixent, fais-le confirmer en une ligne (« Les consignes demandent un PDF : on part là-dessus ? »). Sinon, propose : a) diaporama PDF ; b) PPTX modifiable (PowerPoint, Keynote, Google Slides) ; c) page HTML ; d) document A4, PDF ou Word ; e) autre. Demande aussi s'il y a un oral.
+2. **Le format (toujours).** Si les consignes le fixent, fais-le confirmer en une ligne (« Les consignes demandent un PDF : on part là-dessus ? »). Sinon, propose : a) diaporama PDF ; b) PPTX modifiable (PowerPoint, Keynote, Google Slides) ; c) page HTML ; d) document A4, PDF ou Word ; e) autre. Demande aussi s'il y a un oral, et **dans quelle langue doit être le livrable** (celle du destinataire, NO.1d).
 3. **Ton angle.** Création : 3 positions plausibles tirées de `00_materiel.md`, plus « d) ton avis à toi, et un exemple vécu ou observé ». Refonte : « a) le fond peut changer ; b) seulement la forme ».
 4. **La première qui s'applique :** le doute entre création et refonte ; **ton goût** (3 références de style variées et adaptées au sujet, plus « d) la tienne, et une que tu détestes »). Charte imposée (école, entreprise, client) : elle prime sur le goût, on saute le goût et la question 5.
 5. **L'énergie visuelle** (règle suivante).
