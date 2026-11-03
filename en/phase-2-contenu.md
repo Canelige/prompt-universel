@@ -2,7 +2,7 @@ Who reads it, and when: `diapo-redacteur`, with `principes.md`, to write `02_con
 
 # Phase 2 · Content (`diapo-redacteur`)
 
-**[RULE P2.1]** `travail/02_contenu.yaml`: one entry per page, fields `titre`, `corps`, `bas` (the "so what?" line), `nature` (FACT, INFERENCE or OPINION), `notes`, `sources`, `hypotheses`; the `gabarit` field is added in phase 5.
+**[RULE P2.1]** `travail/02_contenu.yaml`: one entry per page, fields `titre`, `corps`, `bas` (the "so what?" line), `nature` (FACT, INFERENCE or OPINION), `notes`, `sources`, `hypotheses`; the `gabarit` field is added in phase 5. **The production template reads a precise shape** (P6.24): the model is `universel/outils/gabarits/exemple/02_contenu.yaml`, which the mission brief cites. A page also carries, as needed, `pieces` (a table: `nom`, `colonnes`, `lignes`, `totaux`; a chain of steps: `etapes`; a chart: `graphique`; a cross-reference to a YAML list: `renvoi`), `tuiles` (`valeur`, `legende`, `role`), `images` (`fichier`, `alt`, `credit`), `points`, `etape` and `partie`.
 
 ## The text budget
 

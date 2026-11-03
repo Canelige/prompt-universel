@@ -84,6 +84,6 @@ Who reads it, and when: the project chat, in phase 8, to prepare `audit/`, launc
 
 **[RULE P8.29]** Rerun the gates of phases 4 and 7 on the modified pages only; any modified text goes back through `humanizer` (`phase-4-ecriture.md`).
 
-**[RULE P8.30]** Render the modified pages again (full render only if any remain within the ceiling) and `grep` each old figure in the whole text of the deliverable. The auditor concerned rechecks only the corrected points; the "after" grade is theirs, re-estimated on those points, announced as such.
+**[RULE P8.30]** Render the modified pages again (full render only if any remain within the ceiling) and `grep` each old figure in the whole text of the deliverable. The auditor concerned rechecks only the corrected points; the "after" grade is theirs, re-estimated on those points, announced as such. **In Express, this second look is dropped** (PI.39): it costs one more agent for less than one point of grade; what remains is the render of the modified pages, the `grep` of the old figures and the mention "after grade not re-estimated" in the report.
 
 **[RULE P8.31]** The rest follows the loop ceilings (`pilotage.md`).

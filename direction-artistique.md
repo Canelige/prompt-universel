@@ -18,6 +18,8 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[IMPÉRATIF DA.5]** **Couleur qui porte un sens**, expliquée, jamais tirée au hasard, et qui se voit : une page à peine teintée se lit comme une note de cabinet (plancher : « La couleur », point 9 e).
 
+**[IMPÉRATIF DA.5b]** **L'accent a une origine écrite, en une ligne.** La couleur d'accent vient du sujet ou du destinataire : couleurs de marque du client (DA.9), codes du secteur (DA.13), drapeau ou paysage d'un pays ou d'un lieu (DA.12), matière ou photo du produit (DA.92). Le fabricant l'écrit dans `reglages.yaml` (`couleurs.origine : « marque : framboise du logo du client, site officiel »` ; premier mot parmi marque, destinataire, secteur, pays, lieu, produit, photo) et `controles.py` échoue sans elle. Jamais une couleur décorative, jamais celle qu'on aime ; la couleur par défaut du gabarit ne se garde pas. Les teintes dérivées (`accent-clair`, `accent-fonce`) ne sont pas des couleurs de marque : elles servent aux petites surfaces, et un aplat de plus de 1,5 % d'une feuille hors du tableau des rôles est un défaut.
+
 **[RÈGLE DA.6]** **Fond clair et respirant** en pages de contenu : au moins 30 % de blanc. Aplats pleins : « La couleur », point 9 h. Une page en couleur pleine porte peu de mots (un titre ou un chiffre en grand, une phrase, trois repères au plus), de préférence une vraie photo sur une moitié : une pleine page de couleur chargée de texte est le défaut le plus visible.
 
 **[RÈGLE DA.7]** **De vraies images choisies**, des tableaux et graphiques nets, une hiérarchie évidente.
@@ -139,7 +141,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 - `fond`, `encre`, `accent`, `accent-2` : les 4 colonnes après rotation ; `accent-2` ne couvre jamais plus de 10 % d'une page ;
 - `fond-rupture` : l'accent en Affiche et en Vivant ; en Sobre et en Sombre, échange du fond et de l'encre ; réservé aux aplats de rupture (point 9 h ; A4 : seulement Vivant et Affiche) ;
 - `accent-fonce` : teinte de l'accent, luminosité déplacée par pas de 0,02 jusqu'à 4,5:1 sur le fond ; textes en couleur, filets, série principale ;
-- `accent-clair` : luminosité à mi-chemin entre le fond et l'accent, chroma réduit de moitié ;
+- `accent-clair` : un lavis, presque blanc : luminosité du fond moins 0,03 (0,95 au plus), chroma au tiers de celui de l'accent et 0,04 au plus, jamais un ton intermédiaire (à luminosité 0,79, un rose se lit comme sale) ; sur un fond sombre, la luminosité reste à mi-chemin entre le fond et l'accent ;
 - `encre-secondaire` : l'encre rapprochée du fond d'un quart de l'écart de luminosité entre les deux ;
 - `filet` : le fond, écarté de 0,10 en luminosité.
 
@@ -161,7 +163,7 @@ Qui le lit, et quand : `diapo-fabricant`, en entier, pour la planche des directi
 
 **[IMPÉRATIF DA.53]** e) **Plancher, pas seulement plafond** : Vivant et Affiche, au moins 3 moments de couleur par page (signature, aplat ou carte à liseré, graphique ou chiffres en couleur) et couverture avec aplat d'au moins un quart de la page ; Sobre, au moins un moment de couleur franche par page, chiffres clés dans la couleur de leur rôle. Moins de 3 % de surface colorée sur une page : défaut, sauf Sobre typographique choisi et écrit dans `05_charte.md`.
 
-**[RÈGLE DA.54]** **Mesure** du point 9 e, par script, sur le PNG de chaque page rendue (110 dpi, phase 7) : part des pixels de chroma OKLCH supérieur à 0,04, photos exclues (numérateur et dénominateur). Plancher de 3 % page par page ; plage de l'énergie (axe 1) sur l'ensemble des pages. En Vivant, moins de 10 % sur l'ensemble bloque la porte de la phase 7 (`phase-7-controles.md`, P7.10b) : prévois dès la charte le bandeau, les tuiles en aplat et les fonds de section.
+**[RÈGLE DA.54]** **Mesure** du point 9 e, par `controles.py` du gabarit (P6.20), sur chaque page rendue : part des pixels de chroma OKLCH supérieur à 0,04, photos exclues (numérateur et dénominateur), écrite dans `07_controles.md`. Plancher de 3 % page par page ; plage de l'énergie (axe 1) sur l'ensemble des pages, et **maximum par feuille : 30 % en Sobre, 45 % en Vivant, 75 % en Affiche** ; aplat vif (chroma au-delà de 0,14) sur 15 % d'une feuille au plus en Sobre, 20 % en Vivant ; ensemble de 8 à 25 % en Sobre, 10 à 30 % en Vivant, 30 à 60 % en Affiche. Un aplat de plus de 1,5 % d'une feuille hors du tableau des rôles échoue. En Vivant, moins de 10 % sur l'ensemble bloque la porte de la phase 7 (`phase-7-controles.md`, P7.10b) : prévois dès la charte le bandeau, les tuiles en aplat et les fonds de section.
 
 **[RÈGLE DA.55]** f) **Pastilles de statut** (FAIT, HYPOTHÈSE, À VÉRIFIER) permises en Vivant, couleurs du tableau des rôles uniquement, une par bloc au plus ; les autres tags d'incertitude restent du texte. Jamais de vert, de jaune ou de rouge ajoutés hors palette.
 

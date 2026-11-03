@@ -6,7 +6,7 @@ Who reads it, and when: `diapo-fabricant`, in phase 6, to write `controles.py`; 
 
 **[MUST P7.2]** Without LibreOffice, the overflow check is impossible, and the report says so.
 
-**[RULE P7.3]** The lead runs `travail/controles.py` and reads only `travail/07_controles.md`: one table per page per check, with `ok` or the measured value.
+**[RULE P7.3]** The lead runs `travail/controles.py` and reads only `travail/07_controles.md`, which `controles.py` writes itself (P6.20): the check lines, the overall `COLORED AREA: n %` and a table per sheet with `ok` or the measured value.
 
 ## 1. Charter checks (thresholds from `direction-artistique.md`)
 
@@ -22,9 +22,9 @@ Who reads it, and when: `diapo-fabricant`, in phase 6, to write `controles.py`; 
 
 **[RULE P7.9]** Figure without `tabular-nums`, missing non-breaking space (in French).
 
-**[RULE P7.10]** **Colored area** (measure of point 9 e) outside the range of the chosen energy, over the whole deliverable.
+**[RULE P7.10]** **Colored area** (measure of point 9 e) outside the range of the chosen energy, over the whole deliverable, or above the maximum per sheet, or a loud vivid flat (OKLCH chroma above 0.14 on too much area): `direction-artistique.md`, DA.54, measured by `controles.py`.
 
-**[MUST P7.10b]** **Vivid: the range is blocking.** `portes.py 7` reads the overall colored area in `07_controles.md`: under 10%, the phase 7 gate fails. To raise it, in this order: a title banner in a flat fill of the structure color on each content page (10% of the height at most, P7.12); number tiles in solid flat fill rather than outlined; table headers in flat fill; a tinted section background (color of the section's role) on the break pages and summary blocks. Never by tinting the whole page background nor with a hue outside the roles table. Then render only the modified pages (P6.2) and measure again.
+**[MUST P7.10b]** **Vivid: the range is blocking.** `portes.py 7` reads the overall colored area in `07_controles.md`: under 10%, the phase 7 gate fails. To raise it, in this order: number tiles in solid flat fill rather than outlined; table headers in flat fill; a tinted section background (color of the section's role) on the break pages and summary blocks; last, a title banner in a flat fill of the structure color on content pages (10% of the height at most, P7.12). Never by tinting the whole page background, nor with a hue outside the roles table, nor with a derived intermediate tone (the pale pink of trial no. 7, judged "from nowhere and not very clean": DA.44). Then render only the modified pages (P6.2) and measure again.
 
 **[RULE P7.11]** **Color floor**: page under 3% colored area (unless Typographic Sober was chosen), or under the number of color moments of the energy (point 9 e), or Vivid or Poster cover without a flat fill of a quarter of the page.
 

@@ -6,7 +6,7 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, pour écrire `controles.py
 
 **[IMPÉRATIF P7.2]** Sans LibreOffice, contrôle des débordements impossible, et le rapport le dit.
 
-**[RÈGLE P7.3]** Le chef lance `travail/controles.py` et ne lit que `travail/07_controles.md` : un tableau page par contrôle, avec `ok` ou la valeur mesurée.
+**[RÈGLE P7.3]** Le chef lance `travail/controles.py` et ne lit que `travail/07_controles.md`, que `controles.py` écrit lui-même (P6.20) : les lignes de contrôle, `SURFACE COLORÉE : n %` d'ensemble et un tableau par feuille avec `ok` ou la valeur mesurée.
 
 ## 1. Contrôles de charte (seuils de `direction-artistique.md`)
 
@@ -22,9 +22,9 @@ Qui le lit, et quand : `diapo-fabricant`, en phase 6, pour écrire `controles.py
 
 **[RÈGLE P7.9]** Chiffre sans `tabular-nums`, espace insécable manquante (en français).
 
-**[RÈGLE P7.10]** **Surface colorée** (mesure du point 9 e) hors de la plage de l'énergie choisie, sur l'ensemble du livrable.
+**[RÈGLE P7.10]** **Surface colorée** (mesure du point 9 e) hors de la plage de l'énergie choisie, sur l'ensemble du livrable, ou au-delà du maximum par feuille, ou un aplat vif criard (chroma OKLCH au-delà de 0,14 sur trop de surface) : `direction-artistique.md`, DA.54, mesuré par `controles.py`.
 
-**[IMPÉRATIF P7.10b]** **Vivant : la plage est bloquante.** `portes.py 7` lit la surface colorée d'ensemble dans `07_controles.md` : sous 10 %, la porte de la phase 7 échoue. Pour remonter, dans cet ordre : un bandeau de titre en aplat de la couleur de structure sur chaque page de contenu (10 % de la hauteur au plus, P7.12) ; les tuiles de chiffres en aplat plein plutôt qu'en contour ; l'en-tête des tableaux en aplat ; un fond de section teinté (couleur du rôle de la section) sur les pages de rupture et les blocs de synthèse. Jamais en teintant tout le fond de page ni avec une teinte hors du tableau des rôles. Puis rendu des seules pages modifiées (P6.2) et nouvelle mesure.
+**[IMPÉRATIF P7.10b]** **Vivant : la plage est bloquante.** `portes.py 7` lit la surface colorée d'ensemble dans `07_controles.md` : sous 10 %, la porte de la phase 7 échoue. Pour remonter, dans cet ordre : les tuiles de chiffres en aplat plein plutôt qu'en contour ; l'en-tête des tableaux en aplat ; un fond de section teinté (couleur du rôle de la section) sur les pages de rupture et les blocs de synthèse ; en dernier, un bandeau de titre en aplat de la couleur de structure sur les pages de contenu (10 % de la hauteur au plus, P7.12). Jamais en teintant tout le fond de page, ni avec une teinte hors du tableau des rôles, ni avec un ton intermédiaire dérivé (le rose pâle de l'essai n°7, jugé « sorti de nulle part et pas très propre » : DA.44). Puis rendu des seules pages modifiées (P6.2) et nouvelle mesure.
 
 **[RÈGLE P7.11]** **Plancher de couleur** : page sous 3 % de surface colorée (sauf Sobre typographique choisi), ou sous le nombre de moments de couleur de l'énergie (point 9 e), ou couverture Vivant ou Affiche sans aplat d'un quart de la page.
 

@@ -82,9 +82,9 @@ Une réponse vague appelle une relance précise. Ensuite, remplis `profil.md` (r
 3. un lien est donné ici, `LIEN DES MODULES : https://github.com/Canelige/prompt-universel` : télécharge l'archive ou le dépôt par script Python ou `git clone`, jamais par `curl … | bash` ;
 4. sinon, demande-lui de déposer le dossier `universel` dans l'atelier, puis termine ton tour.
 
-Ensuite, si `universel/PROMPT_UNIVERSEL.md` manque, écris-y ce noyau tel qu'il a été collé. Contrôle par script que chaque fichier existe et porte sa ligne « Qui le lit, et quand » ; un fichier manquant se redemande, jamais réécrit de mémoire.
+Ensuite, si `universel/PROMPT_UNIVERSEL.md` manque, écris-y ce noyau tel qu'il a été collé. Contrôle par script que chaque fichier existe et porte sa ligne « Qui le lit, et quand » (en première ligne ; dans les 7 fichiers de `agents/` elle vient après l'en-tête YAML, qui reste la première chose du fichier ; `README.md` n'en porte pas) ; un fichier manquant se redemande, jamais réécrit de mémoire.
 
-**[RÈGLE NO.8]** **Lire au bon moment.** Ce noyau se lit en entier. Un module se lit **en entier, au moment de son étape, et seulement lui**, plus `travail/revue_chef.md` s'il existe ; ses règles valent dès le premier ordre de mission. Exception : `direction-artistique.md`, lu comme le dit la phase 5 ci-dessous. Une section introuvable : `grep -n "^#" universel/<module>`, puis lecture avec début et limite.
+**[RÈGLE NO.8]** **Lire au bon moment.** Ce noyau se lit en entier. Un module se lit **en entier, au moment de son étape, et seulement lui**, plus `travail/revue_chef.md` s'il existe ; ses règles valent dès le premier ordre de mission. Exceptions : `direction-artistique.md`, lu comme le dit la phase 5 ci-dessous, et les modules des phases 6 et 7, dont le chef ne cherche que la recette ou la ligne voulue (`pilotage.md`, PI.53). Une section introuvable : `grep -n "^#" universel/<module>`, puis lecture avec début et limite.
 
 **[RÈGLE NO.9]** **Chaque agent reçoit son seul module.** L'ordre de mission donne le chemin absolu du module dans `universel/` et la sous-section utile ; `principes.md` s'y ajoute seulement pour `diapo-redacteur`, `diapo-verificateur` et `diapo-expert`. Un agent ne reçoit jamais ce noyau.
 

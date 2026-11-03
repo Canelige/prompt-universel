@@ -18,6 +18,8 @@ Who reads it, and when: `diapo-fabricant`, in full, for the contact sheet of dir
 
 **[MUST DA.5]** **Color that carries meaning**, explained, never drawn at random, and visible: a page barely tinted reads like a consulting-firm memo (floor: "Color", point 9 e).
 
+**[MUST DA.5b]** **The accent has a written origin, in one line.** The accent color comes from the subject or the recipient: the client's brand colors (DA.9), the sector's codes (DA.13), the flag or landscape of a country or a place (DA.12), the material or photo of the product (DA.92). The builder writes it in `reglages.yaml` (`couleurs.origine: "brand: raspberry of the client's logo, official site"`; first word among brand, recipient, sector, country, place, product, photo) and `controles.py` fails without it. Never a decorative color, never the one we like; the template's default color is not kept. Derived tints (`accent-clair`, `accent-fonce`) are not brand colors: they serve small areas, and a flat of more than 1.5% of a sheet outside the roles table is a defect.
+
 **[RULE DA.6]** **Light, breathing background** on content pages: at least 30% white. Solid colored areas: "Color", point 9 h. A page in solid color carries few words (a title or a large number, one sentence, three markers at most), preferably a real photo on one half: a full page of color loaded with text is the most visible flaw.
 
 **[RULE DA.7]** **Real, chosen images**, clean tables and charts, an obvious hierarchy.
@@ -139,7 +141,7 @@ Who reads it, and when: `diapo-fabricant`, in full, for the contact sheet of dir
 - `fond`, `encre`, `accent`, `accent-2`: the 4 columns after rotation; `accent-2` never covers more than 10% of a page;
 - `fond-rupture`: the accent in Poster and in Vivid; in Sober and in Dark, a swap of background and ink; reserved for break solid areas (point 9 h; A4: only Vivid and Poster);
 - `accent-fonce`: hue of the accent, lightness shifted in steps of 0.02 until 4.5:1 on the background; colored text, rules, main series;
-- `accent-clair`: lightness halfway between the background and the accent, chroma halved;
+- `accent-clair`: a wash, almost white: the background's lightness minus 0.03 (0.95 at most), chroma a third of the accent's and 0.04 at most, never an intermediate tone (at lightness 0.79, a pink reads as dirty); on a dark background, lightness stays halfway between the background and the accent;
 - `encre-secondaire`: the ink moved toward the background by a quarter of the lightness gap between the two;
 - `filet`: the background, moved apart by 0.10 in lightness.
 
@@ -161,7 +163,7 @@ Who reads it, and when: `diapo-fabricant`, in full, for the contact sheet of dir
 
 **[MUST DA.53]** e) **Floor, not only ceiling**: Vivid and Poster, at least 3 color moments per page (signature, solid area or card with an edge rule, chart or figures in color) and a cover with a solid area of at least a quarter of the page; Sober, at least one clear color moment per page, key figures in the color of their role. Less than 3% colored area on a page: flaw, except for a Typographic Sober chosen and written in `05_charte.md`.
 
-**[RULE DA.54]** **Measurement** of point 9 e, by script, on the PNG of each rendered page (110 dpi, phase 7): share of pixels with OKLCH chroma above 0.04, photos excluded (numerator and denominator). Floor of 3% page by page; the energy's range (axis 1) across all pages. In Vivid, under 10% across all pages blocks the phase 7 gate (`phase-7-controles.md`, P7.10b): plan the banner, the solid tiles and the section backgrounds from the charter on.
+**[RULE DA.54]** **Measurement** of point 9 e, by the template's `controles.py` (P6.20), on each rendered page: share of pixels with OKLCH chroma above 0.04, photos excluded (numerator and denominator), written in `07_controles.md`. Floor of 3% page by page; the energy's range (axis 1) across all pages, and **maximum per sheet: 30% in Sober, 45% in Vivid, 75% in Poster**; vivid flat (chroma above 0.14) on 15% of a sheet at most in Sober, 20% in Vivid; overall 8 to 25% in Sober, 10 to 30% in Vivid, 30 to 60% in Poster. A flat of more than 1.5% of a sheet outside the roles table fails. In Vivid, under 10% across all pages blocks the phase 7 gate (`phase-7-controles.md`, P7.10b): plan the banner, the solid tiles and the section backgrounds from the charter on.
 
 **[RULE DA.55]** f) **Status dots** (FACT, ASSUMPTION, TO VERIFY) allowed in Vivid, colors from the roles table only, one per block at most; the other uncertainty tags remain text. Never green, yellow or red added outside the palette.
 

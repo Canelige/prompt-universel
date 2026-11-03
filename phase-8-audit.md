@@ -84,6 +84,6 @@ Qui le lit, et quand : la discussion de projet, en phase 8, pour préparer `audi
 
 **[RÈGLE P8.29]** Relance les portes des phases 4 et 7 sur les seules pages modifiées ; tout texte modifié repasse par `humanizer` (`phase-4-ecriture.md`).
 
-**[RÈGLE P8.30]** Rends à nouveau les pages modifiées (rendu complet seulement s'il en reste dans le plafond) et cherche par `grep` chaque ancien chiffre dans tout le texte du livrable. L'auditeur concerné revérifie seulement les points corrigés ; la note « après » est la sienne, réestimée sur ces points, annoncée comme telle.
+**[RÈGLE P8.30]** Rends à nouveau les pages modifiées (rendu complet seulement s'il en reste dans le plafond) et cherche par `grep` chaque ancien chiffre dans tout le texte du livrable. L'auditeur concerné revérifie seulement les points corrigés ; la note « après » est la sienne, réestimée sur ces points, annoncée comme telle. **En Express, ce second regard est écarté** (PI.39) : il coûte un agent de plus pour une note de moins d'un point ; restent le rendu des pages modifiées, le `grep` des anciens chiffres et la mention « note après non réestimée » dans le rapport.
 
 **[RÈGLE P8.31]** Le reste suit les plafonds de boucle (`pilotage.md`).

@@ -22,7 +22,7 @@ Who reads it, and when: `diapo-redacteur`, with `principes.md`, in phase 4 and f
 
 **[RULE P4.10]** **5. French typography** (for a French deliverable): non-breaking space before ": ; ! ? %", inside the « » quotation marks, between a number and its unit, in thousands; typographic apostrophe.
 
-**[MUST P4.11]** **6. Lead: the phase 4 gate.** `python travail/calculs.py verifier`: a new or vanished number fails the phase, 2 passes at most. `portes.py 4` also extracts the titles of `02_contenu.yaml` and compares them to `titres_seuls.txt`: each title added, removed or changed goes into `PREUVES.md`, then `titres_seuls.txt` is rewritten from the YAML.
+**[MUST P4.11]** **6. Lead: the phase 4 gate.** You run the scripts; the writer runs none. In order: `python travail/calculs.py verifier` (a number of the YAML absent from `03_verification.md`, `donnees.csv` and `calculs.py`, or the figure of an A line vanished from the YAML, fails the phase, 2 passes at most), then, once the gate has passed and the phase 3 corrections are applied, `python travail/calculs.py geler`, which writes `travail/chiffres_geles.txt`: the freeze comes here and never at phase 3 (P3.26). `portes.py 4` also extracts the titles of `02_contenu.yaml` and compares them to `titres_seuls.txt`: each title added, removed or changed goes into `PREUVES.md`, then `titres_seuls.txt` is rewritten from the YAML.
 
 **[MUST P4.12]** A later correction that changes a figure: first correct its line in `03_verification.md`, rerun `geler`, rerun the gate.
 

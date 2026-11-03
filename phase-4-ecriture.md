@@ -22,7 +22,7 @@ Qui le lit, et quand : `diapo-redacteur`, avec `principes.md`, en phase 4 et pou
 
 **[RÈGLE P4.10]** **5. La typographie française** : espace insécable avant « : ; ! ? % », à l'intérieur des guillemets « », entre un nombre et son unité, dans les milliers ; apostrophe typographique.
 
-**[IMPÉRATIF P4.11]** **6. Chef : la porte de la phase 4.** `python travail/calculs.py verifier` : un nombre nouveau ou disparu fait échouer la phase, 2 passes au plus. `portes.py 4` extrait aussi les titres de `02_contenu.yaml` et les compare à `titres_seuls.txt` : chaque titre ajouté, retiré ou changé va dans `PREUVES.md`, puis `titres_seuls.txt` est réécrit depuis le YAML.
+**[IMPÉRATIF P4.11]** **6. Chef : la porte de la phase 4.** C'est toi qui lances les scripts, le rédacteur n'en lance aucun. Dans l'ordre : `python travail/calculs.py verifier` (un nombre du YAML absent de `03_verification.md`, de `donnees.csv` et de `calculs.py`, ou le chiffre d'une ligne A disparu du YAML, fait échouer la phase, 2 passes au plus), puis, la porte passée et les corrections de la phase 3 appliquées, `python travail/calculs.py geler`, qui écrit `travail/chiffres_geles.txt` : le gel vient ici et jamais à la phase 3 (P3.26). `portes.py 4` extrait aussi les titres de `02_contenu.yaml` et les compare à `titres_seuls.txt` : chaque titre ajouté, retiré ou changé va dans `PREUVES.md`, puis `titres_seuls.txt` est réécrit depuis le YAML.
 
 **[IMPÉRATIF P4.12]** Une correction ultérieure qui change un chiffre : on corrige d'abord sa ligne dans `03_verification.md`, on relance `geler`, on relance la porte.
 

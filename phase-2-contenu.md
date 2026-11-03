@@ -2,7 +2,7 @@ Qui le lit, et quand : `diapo-redacteur`, avec `principes.md`, pour écrire `02_
 
 # Phase 2 · Contenu (`diapo-redacteur`)
 
-**[RÈGLE P2.1]** `travail/02_contenu.yaml` : une entrée par page, champs `titre`, `corps`, `bas` (la ligne « et alors ? »), `nature` (FAIT, INFÉRENCE ou OPINION), `notes`, `sources`, `hypotheses` ; le champ `gabarit` est ajouté en phase 5.
+**[RÈGLE P2.1]** `travail/02_contenu.yaml` : une entrée par page, champs `titre`, `corps`, `bas` (la ligne « et alors ? »), `nature` (FAIT, INFÉRENCE ou OPINION), `notes`, `sources`, `hypotheses` ; le champ `gabarit` est ajouté en phase 5. **Le gabarit de fabrication lit une forme précise** (P6.24) : le modèle est `universel/outils/gabarits/exemple/02_contenu.yaml`, que l'ordre de mission cite. Une page porte en plus, selon le besoin, `pieces` (un tableau : `nom`, `colonnes`, `lignes`, `totaux` ; une chaîne d'étapes : `etapes` ; un graphique : `graphique` ; un renvoi vers une liste du YAML : `renvoi`), `tuiles` (`valeur`, `legende`, `role`), `images` (`fichier`, `alt`, `credit`), `points`, `etape` et `partie`.
 
 ## Le budget de texte
 

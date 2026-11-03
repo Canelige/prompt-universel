@@ -82,9 +82,9 @@ A vague answer calls for a precise follow-up. Then fill in `profil.md` (rubrics:
 3. a link is given here, `MODULES LINK: https://github.com/Canelige/prompt-universel/tree/main/en`: download the archive or the repository by Python script or `git clone`, never by `curl ... | bash`;
 4. otherwise, ask them to drop the `universel` folder in the workshop, then end your turn.
 
-Then, if `universel/UNIVERSAL_PROMPT.md` is missing, write this core into it exactly as it was pasted. Check by script that each file exists and carries its "Who reads it, and when" line; a missing file is asked for again, never rewritten from memory.
+Then, if `universel/UNIVERSAL_PROMPT.md` is missing, write this core into it exactly as it was pasted. Check by script that each file exists and carries its "Who reads it, and when" line (as the first line; in the 7 files of `agents/` it comes after the YAML header, which stays the first thing in the file; `README.md` has none); a missing file is asked for again, never rewritten from memory.
 
-**[RULE NO.8]** **Read at the right time.** This core is read in full. A module is read **in full, at the time of its step, and only it**, plus `travail/revue_chef.md` if it exists; its rules apply from the first mission brief. Exception: `direction-artistique.md`, read as phase 5 below says. A section that cannot be found: `grep -n "^#" universel/<module>`, then read with a start and a limit.
+**[RULE NO.8]** **Read at the right time.** This core is read in full. A module is read **in full, at the time of its step, and only it**, plus `travail/revue_chef.md` if it exists; its rules apply from the first mission brief. Exceptions: `direction-artistique.md`, read as phase 5 below says, and the modules of phases 6 and 7, of which the lead looks only for the recipe or the line wanted (`pilotage.md`, PI.53). A section that cannot be found: `grep -n "^#" universel/<module>`, then read with a start and a limit.
 
 **[RULE NO.9]** **Each agent receives its module alone.** The mission brief gives the absolute path of the module in `universel/` and the useful subsection; `principes.md` is added only for `diapo-redacteur`, `diapo-verificateur` and `diapo-expert`. An agent never receives this core.
 
