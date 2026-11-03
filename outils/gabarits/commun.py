@@ -32,6 +32,9 @@ MSG = {
     "mots": ("page {p} : le corps fait {n} mots, ce gabarit en accepte {max} : écris un champ `points` ou coupe.", "page {p}: the body has {n} words, this template accepts {max}: write a `points` field or cut."),
     "remplacement": ("le nombre de feuilles a changé ({a} puis {b}) : une correction qui change le nombre de pages demande un rendu complet (P6.2)", "the number of sheets changed ({a} then {b}): a correction that changes the page count needs a full render (P6.2)"),
     "detail": ("feuilles de suite à fusionner ou supprimer : {suites} ; feuilles les plus chargées : {mots}", "continuation sheets to merge or remove: {suites}; heaviest sheets: {mots}"),
+    "reserve": ("le 3e rendu complet est réservé à la phase 8 : rends seulement les pages fautives avec --pages ; en phase 8, `build.py --audit` lève la réserve (PI.31)", "the 3rd full render is reserved for phase 8: render only the faulty pages with --pages; in phase 8, `build.py --audit` lifts the reserve (PI.31)"),
+    "toutes": ("--pages couvre les {n} feuilles : c'est un rendu complet, lance build.py sans --pages (il sera compté, PI.31)", "--pages covers all {n} sheets: that is a full render, run build.py without --pages (it will be counted, PI.31)"),
+    "hors": ("--pages : la feuille {x} n'existe pas (il y en a {n})", "--pages: sheet {x} does not exist (there are {n})"),
     "pdf_absent": ("aucun PDF de rendu dans {d}", "no rendered PDF in {d}"),
 }
 def m(cle, **kw): return MSG[cle][0 if LANG == "fr" else 1].format(**kw)
@@ -39,8 +42,9 @@ def m(cle, **kw): return MSG[cle][0 if LANG == "fr" else 1].format(**kw)
 # ---------------------------------------------------------------- réglages
 DEFAUTS = {
     "document": {"titre": "", "auteur": "[à compléter]", "sujet": "", "nom_fichier": "Sujet_Livrable_Auteur", "langue": "fr"},
-    "couleurs": {"teinte": "#3A4A5C", "accent": "#E07A1F", "accent_2": "#3A4A5C", "series": {}, "roles": {}},
-    "polices": {"famille": "sans-serif", "fichiers": {}},
+    "couleurs": {"teinte": "#3A4A5C", "accent": "#E07A1F", "accent_2": "#3A4A5C", "series": {}, "roles": {}, "origine": ""},
+    "energie": "", "sobre_typographique": False, "frise": [],
+    "polices": {"famille": "sans-serif", "fichiers": {}, "titres": {"famille": "", "fichiers": {}}},
     "densite": {
         "a4": {"corps": 14, "cellule": 11.1, "source": 10.4, "legende": 10, "titre": 27, "marge_mm": 14, "interligne": 1.33},
         "diaporama": {"corps": 30, "cellule": 24, "source": 17, "legende": 17, "titre": 56, "marge_px": 96, "interligne": 1.3, "mots_max": 70},
@@ -116,7 +120,7 @@ def roles(S):
     Lf, Le = rgb2oklch(*hex2rgb(fond))[0], rgb2oklch(*hex2rgb(encre))[0]
     La, Ca, ha = rgb2oklch(*hex2rgb(c["accent"]))
     r = {"fond": fond, "encre": encre, "accent": c["accent"], "accent-2": c["accent_2"], "fond-rupture": c["accent"],
-         "accent-fonce": foncer(c["accent"], fond), "accent-clair": ok2hex((Lf + La) / 2 + 0.03, Ca / 2, ha),
+         "accent-fonce": foncer(c["accent"], fond), "accent-clair": (ok2hex(min(Lf - 0.03, 0.95), min(Ca * 0.3, 0.04), ha) if Lf > 0.5 else ok2hex((Lf + La) / 2 + 0.03, Ca / 2, ha)),
          "encre-secondaire": ok2hex(Le + (Lf - Le) * 0.25, 0.03, hp), "filet": ok2hex(Lf - 0.10, 0.012, hp),
          "blanc-chaud": ok2hex(0.99, 0.004, hp)}
     for i, (nom, x) in enumerate(c["series"].items()):
@@ -204,10 +208,19 @@ def tableau(colonnes, lignes, S, totaux=None, total_poids=None, cls=""):
         out.append("<tr>%s</tr>" % "".join(tds))
     if total_poids is not None: out.append('<tr class="tot"><td>%s</td><td class="num">%s</td>%s</tr>' % (html.escape(S["libelles"]["total"]), fmt(str(total_poids), S), "<td></td>" * (n - 2)))
     vc = max(num) if num else n - 1   # les totaux tombent sous la dernière colonne numérique
-    for lbl, v in (totaux or []):
+    for t in (totaux or []):
+        lbl, vals = t[0], list(t[1:])
+        if len(vals) > 1:   # plusieurs valeurs : sous les dernières colonnes
+            out.append('<tr class="tot"><td colspan="%d" class="tl">%s</td>%s</tr>' % (max(n - len(vals), 1), fmt(lbl, S), "".join('<td class="num">%s</td>' % fmt(str(v), S) for v in vals))); continue
+        v = vals[0]
         if len(str(v)) > 14: out.append('<tr class="tot"><td colspan="%d">%s: %s</td></tr>' % (n, fmt(lbl, S), fmt(str(v), S)))
         else: out.append('<tr class="tot"><td colspan="%d" class="tl">%s</td><td class="num">%s</td>%s</tr>' % (vc, fmt(lbl, S), fmt(str(v), S), "<td></td>" * (n - 1 - vc)))
     return "".join(out) + "</tbody></table>"
+
+def frise(S, i):
+    """Frise des parties en pied (axe 7) : `frise:` de reglages.yaml, la partie courante `i` (indice) en accent."""
+    if not S["frise"] or i is None: return ""
+    return '<span class="frise">%s</span>' % "".join('<i%s>%s</i>' % (' class="on"' if k == i else "", html.escape(x)) for k, x in enumerate(S["frise"]))
 
 def chaine(etapes, S, vertical=False):
     if vertical:
@@ -278,6 +291,13 @@ def sources_html(pg, S):
     return '<div class="srcl">%s</div><ul>%s</ul>%s' % (html.escape(S["libelles"]["sources"]), li, hyp)
 
 # ---------------------------------------------------------------- CSS commun (jetons et blocs)
+def css_plus(p):
+    """Famille des titres (réglage `polices.titres`) et frise des parties : ajoutées au CSS de base."""
+    t = p["titres"]
+    faces = "".join('@font-face{font-family:"%s";font-weight:%s;src:url(../%s)}' % (t["famille"], w, f) for w, f in t["fichiers"].items()) if t["famille"] else ""
+    reg = 'h1,.ph,.tile b,.chev{font-family:"%s",sans-serif}' % t["famille"] if t["famille"] else ""
+    return faces + reg + ".frise{display:flex;gap:14px;font-size:var(--tl);letter-spacing:.04em;color:var(--encre-secondaire)}.frise i{font-style:normal;padding-bottom:1px}.frise i.on{color:var(--accent-fonce);font-weight:700;border-bottom:2px solid var(--accent)}"
+
 def css_base(S, R, echelle, type_):
     d = S["densite"][type_]; p = S["polices"]
     faces = "".join('@font-face{font-family:"%s";font-weight:%s;src:url(../%s)}' % (p["famille"], w, f) for w, f in p["fichiers"].items())
@@ -335,7 +355,7 @@ tr.tot td{font-weight:700;border-top:1.5px solid var(--encre);border-bottom:0}tr
 .registre .hval{font-weight:700;color:var(--accent-fonce)}.registre .hobj{font-size:.96em;color:var(--encre-secondaire)}
 .registre p{margin:0 0 1px}.sep{display:inline-block;width:1px;height:10px;background:var(--filet);margin:0 9px;vertical-align:-1px}
 .regle{flex:1;height:2px;background:var(--filet)}
-""" % (root, d["corps"], d["cellule"], d["source"], d["legende"], d["titre"], d["interligne"], p["famille"], ser, p["famille"])
+""" % (root, d["corps"], d["cellule"], d["source"], d["legende"], d["titre"], d["interligne"], p["famille"], ser, p["famille"]) + css_plus(p)
 
 # ---------------------------------------------------------------- feuilles prévues (reglages.yaml, sinon une par page)
 def plan_feuilles(S, Y):
@@ -407,15 +427,26 @@ def plafond_feuilles():
     n = [int(x) for x in re.findall(r"\d+", t.group(1))]
     return (min(n), max(n)) if n else None
 
-def compteur(incrementer=False):
+def compteur(incrementer=False, audit=False):
+    """Compteur RENDUS COMPLETS de ETAT.md. Les deux premiers rendus servent le premier cycle ; le 3e est réservé à la phase 8 (`audit=True`)."""
     if not os.path.exists(ETAT): return 0
     t = open(ETAT, encoding="utf-8").read(); mt = re.search(r"(RENDUS COMPLETS|FULL RENDERS) : (\d+) / 3", t)
     if not mt: return 0
     n = int(mt.group(2))
     if incrementer:
         if n >= 3: raise SystemExit(m("rendus"))
+        if n >= 2 and not audit: raise SystemExit(m("reserve"))
         open(ETAT, "w", encoding="utf-8").write(t.replace(mt.group(0), "%s : %d / 3" % (mt.group(1), n + 1)))
     return n
+
+def compteur_annuler():
+    """Un rendu qui plante avant d'avoir écrit son PDF n'est pas compté (PI.31) : sinon le compteur dépasse les PDF de rendus/."""
+    t = open(ETAT, encoding="utf-8").read(); mt = re.search(r"(RENDUS COMPLETS|FULL RENDERS) : (\d+) / 3", t)
+    if mt and int(mt.group(2)) > 0: open(ETAT, "w", encoding="utf-8").write(t.replace(mt.group(0), "%s : %d / 3" % (mt.group(1), int(mt.group(2)) - 1)))
+
+def rendus_complets():
+    """PDF complets de rendus/ (ni les pages seules, ni la planche) : la porte les compare au compteur (PI.31)."""
+    return sorted(x for x in glob.glob(os.path.join(RENDUS, "*.pdf")) if not os.path.basename(x).startswith("pages-"))
 
 # ---------------------------------------------------------------- sorties : livrable.txt, planche, remplacement de pages
 def detail_chargees(d, feuilles=None):
@@ -465,11 +496,16 @@ def main(construire, largeur, hauteur, type_, planche_cols, argv=None, apres=Non
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("--pages", help="numéros de feuilles à rendre seules, ex. 4,7 (hors compteur de rendus complets)")
+    ap.add_argument("--audit", action="store_true", help="phase 8 : lève la réserve du 3e rendu complet (PI.31)")
     a = ap.parse_args(argv)
     S = reglages(); d = S["densite"][type_]; lh = d["corps"] * d["interligne"]; os.makedirs(RENDUS, exist_ok=True); os.makedirs(LIVRAISON, exist_ok=True); os.makedirs(BUILD, exist_ok=True)
     path, feuilles, titre = construire()
     nom = S["document"]["nom_fichier"]; livre = os.path.join(LIVRAISON, nom + ".pdf")
     sel = [int(x) for x in a.pages.split(",")] if a.pages else None
+    if sel:
+        sel = sorted(set(sel)); hors = [x for x in sel if not 1 <= x <= len(feuilles)]
+        if hors: raise SystemExit(m("hors", x=hors[0], n=len(feuilles)))
+        if len(sel) == len(feuilles): raise SystemExit(m("toutes", n=len(feuilles)))   # toutes les feuilles = un rendu complet : il passe par le compteur
     if sel:   # rendu partiel : n'entre pas dans le compteur ni dans rendus/ des rendus complets
         sortie = os.path.join(RENDUS, "pages-" + "-".join(map(str, sel)) + ".pdf")
         rep = rendre(path, sortie, largeur, hauteur, sel)
@@ -482,9 +518,10 @@ def main(construire, largeur, hauteur, type_, planche_cols, argv=None, apres=Non
                 if apres: apres(livre, rep, feuilles)
         print("pages %s rendues : %s" % (sel, " ".join(png)))
     else:
-        n = compteur(incrementer=True)
-        sortie = os.path.join(RENDUS, "%s_%s.pdf" % (nom, datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
-        rep = rendre(path, sortie, largeur, hauteur); metadonnees(sortie, S, titre)
+        n = compteur(incrementer=True, audit=a.audit)
+        sortie = os.path.join(RENDUS, "%s_r%d_%s.pdf" % (nom, n + 1, datetime.datetime.now().strftime("%Y%m%d-%H%M%S")))
+        try: rep = rendre(path, sortie, largeur, hauteur); metadonnees(sortie, S, titre)
+        except BaseException: compteur_annuler(); raise
         json.dump(rep, open(os.path.join(BUILD, "mesure.json"), "w"))
         livrable_txt(sortie); pl = planche(sortie, os.path.join(RENDUS, "planche.png"), cols=planche_cols)
         print("rendu complet %d / 3 : %s, %d feuille(s), %.2f Mo\nplanche : %s" % (n + 1, sortie, len(pymupdf.open(sortie)), os.path.getsize(sortie) / 1e6, pl))

@@ -1,6 +1,8 @@
 # Réglages de l'exemple : couleurs, polices, densité et plan des feuilles. Aucun contenu, aucun nombre imprimé.
 document: {titre: "Plan de l'atelier", auteur: "Atelier Démo", nom_fichier: "Plan_Livrable_Atelier-Demo", langue: fr}
-couleurs: {teinte: "#2F4B5C", accent: "#E8A317", accent_2: "#2F4B5C"}
+couleurs: {teinte: "#2F4B5C", accent: "#E8A317", accent_2: "#2F4B5C", origine: "secteur : le jaune ambré des chantiers de l'atelier, pour l'exemple"}
+energie: vivant
+sobre_typographique: true   # l'exemple est presque vide : le plancher de 3 % par feuille (P7.11) est levé ici
 unites: ["EUR", "semaines"]
 images_min: 0
 synthese: {page: 2, tuiles: true, points: true, pieces: [0]}

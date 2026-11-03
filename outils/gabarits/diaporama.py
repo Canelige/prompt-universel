@@ -96,7 +96,7 @@ def feuille(f, k, Y, D, S):
     else: corps = '<div class="cols %s"><div class="col">%s</div><div class="col">%s</div></div>' % (disp, gauche, droite)
     bot = ""
     if f.get("fin", True) and not f.get("suite"): bot += '<div class="bas">%s</div><div class="sources">%s</div>' % (fmt(pg["bas"], S), sources_html(pg, S))
-    bot += '<div class="pied"><span class="num">%d</span><span class="regle"></span></div>' % k
+    bot += '<div class="pied"><span class="num">%d</span>%s<span class="regle"></span></div>' % (k, frise(S, f.get("partie", pg.get("partie"))))
     return '<section class="%s" data-f="%d" data-p="%d">%s<div class="bandeau"><h1>%s</h1></div><main class="main">%s</main><div class="bottom">%s</div></section>' % (classes, k, f["page"], top, titre, corps, bot)
 
 def construire():

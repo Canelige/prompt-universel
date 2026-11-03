@@ -9,7 +9,7 @@
 Le YAML porte tout le texte et tous les nombres ; reglages.yaml porte les couleurs, les polices, la densité et le plan des
 feuilles (`feuilles:`) ; une pièce d'un type propre au travail se déclare dans blocs.py (PIECES = {champ: fonction}).
 Champs de page lus en plus de ceux de P2.1 : `etape` (étiquette du bandeau), `tuiles`, `images` ({fichier, alt, credit}).
-Gabarits : couverture, synthese (texte et pièces), image (photo ou diptyque), tableau, decision. `points: true` dans la feuille : la liste `points` du YAML remplace le corps.
+Gabarits : couverture, synthese (texte et pièces), image (photo ou diptyque), tableau, decision. `points: true` dans la feuille : la liste `points` du YAML remplace le corps ; `points: plus` : elle suit le corps. `partie: i` (feuille ou page) : la partie courante de la frise `frise:` de reglages.yaml, en pied.
 """
 import html, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -85,7 +85,7 @@ def feuille(f, k, Y, D, S):
     if not f.get("suite"):
         if f.get("tuiles") and pg.get("tuiles"): body += '<div class="slabtiles plein">%s</div>' % tuiles(pg["tuiles"], S) if f.get("rupture") else tuiles(pg["tuiles"], S)
         if f.get("diptyque"): body += '<div class="dipt">%s%s</div>' % (figure(pg["images"][0], S), figure(pg["images"][1], S))
-        txt = liste_points(pg, S) if f.get("points") and pg.get("points") else paragraphes(pg["corps"], S); c2 = " c2" if f.get("colonnes", 1) == 2 else ""
+        txt = liste_points(pg, S) if f.get("points") is True and pg.get("points") else paragraphes(pg["corps"], S) + (liste_points(pg, S) if f.get("points") == "plus" and pg.get("points") else ""); c2 = " c2" if f.get("colonnes", 1) == 2 else ""
         if f.get("rail") and f.get("rail_pos", "texte") == "texte":
             body += '<div class="grid"><aside class="rail">%s</aside><div class="texte%s">%s</div></div>' % (rail(f["rail"]), c2, txt)
         else: body += '<div class="texte%s">%s</div>' % (c2, txt)
@@ -94,7 +94,7 @@ def feuille(f, k, Y, D, S):
     for i in f.get("pieces", []): body += P(i)
     bot = ""
     if f.get("fin"): bot += '<div class="bas">%s</div><div class="sources">%s</div>' % (fmt(pg["bas"], S), sources_html(pg, S))
-    bot += '<div class="pied"><span class="num">%s</span><span class="regle"></span></div>' % num
+    bot += '<div class="pied"><span class="num">%s</span>%s<span class="regle"></span></div>' % (num, frise(S, f.get("partie", pg.get("partie"))))
     return '<section class="%s" data-f="%d" data-p="%d">%s%s<main class="main">%s</main><div class="bottom">%s</div></section>' % (classes, k, f["page"], top, h1, body, bot)
 
 def plan(S, Y):

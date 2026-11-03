@@ -1,6 +1,8 @@
 # Settings of the example: colors, fonts, density and sheet plan. No content, no printed number.
 document: {titre: "Workshop plan", auteur: "Demo Workshop", nom_fichier: "Plan_Deliverable_Demo-Workshop", langue: en}
-couleurs: {teinte: "#2F4B5C", accent: "#E8A317", accent_2: "#2F4B5C"}
+couleurs: {teinte: "#2F4B5C", accent: "#E8A317", accent_2: "#2F4B5C", origine: "sector: the amber yellow of the workshop sites, for the example"}
+energie: vivid
+sobre_typographique: true   # the example is almost empty: the 3 % floor per sheet (P7.11) is lifted here
 unites: ["EUR", "weeks"]
 images_min: 0
 synthese: {page: 2, tuiles: true, points: true, pieces: [0]}
